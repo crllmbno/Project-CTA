@@ -7,15 +7,36 @@ namespace CTA
             InitializeComponent();
         }
 
+
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             StreamWriter submit = File.AppendText(@"List.txt");
             submit.WriteLine("Name: " + box1.Text + ", " + box2.Text + " " + box3.Text);
+            submit.WriteLine("Age: " + box4.Text);
+            if (MaleButton.Checked == true)
+            {
+                submit.WriteLine("Sex: " + MaleButton.Text);
+            }
+            else if (FemaleButton.Checked == true)
+            {
+                submit.WriteLine("Sex: " + FemaleButton.Text);
+            }
 
+
+            submit.WriteLine("");
+            submit.WriteLine("");
+            submit.WriteLine("");
             submit.Close();
             box1.Clear();
             box2.Clear();
             box3.Clear();
+            box4.Clear();
+            box5.Clear();
+            box6.Clear();
+            box7.Clear();
+            box8.Clear();
+            box9.Clear();
+            box10.Clear();
 
         }
     }
