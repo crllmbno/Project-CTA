@@ -1,6 +1,6 @@
 ﻿namespace CTA
 {
-    partial class Form1
+    partial class CTA
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTA));
+            this.CTF = new System.Windows.Forms.Label();
+            this.txt1 = new System.Windows.Forms.Label();
+            this.txtbx1 = new System.Windows.Forms.TextBox();
+            this.txt2 = new System.Windows.Forms.Label();
+            this.txtbx2 = new System.Windows.Forms.TextBox();
+            this.txt3 = new System.Windows.Forms.Label();
+            this.txtbx3 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // CTF
+            // 
+            this.CTF.AutoSize = true;
+            this.CTF.BackColor = System.Drawing.Color.Transparent;
+            this.CTF.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CTF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CTF.Location = new System.Drawing.Point(194, 7);
+            this.CTF.Name = "CTF";
+            this.CTF.Size = new System.Drawing.Size(309, 33);
+            this.CTF.TabIndex = 0;
+            this.CTF.Text = "Contact Tracing Form";
+            // 
+            // txt1
+            // 
+            this.txt1.AutoSize = true;
+            this.txt1.BackColor = System.Drawing.Color.Transparent;
+            this.txt1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt1.Location = new System.Drawing.Point(12, 56);
+            this.txt1.Name = "txt1";
+            this.txt1.Size = new System.Drawing.Size(93, 19);
+            this.txt1.TabIndex = 0;
+            this.txt1.Text = "Last Name";
+            // 
+            // txtbx1
+            // 
+            this.txtbx1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx1.Location = new System.Drawing.Point(12, 77);
+            this.txtbx1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx1.MaxLength = 16;
+            this.txtbx1.Name = "txtbx1";
+            this.txtbx1.Size = new System.Drawing.Size(154, 27);
+            this.txtbx1.TabIndex = 1;
+            // 
+            // txt2
+            // 
+            this.txt2.AutoSize = true;
+            this.txt2.BackColor = System.Drawing.Color.Transparent;
+            this.txt2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt2.Location = new System.Drawing.Point(194, 56);
+            this.txt2.Name = "txt2";
+            this.txt2.Size = new System.Drawing.Size(97, 19);
+            this.txt2.TabIndex = 0;
+            this.txt2.Text = "First Name";
+            // 
+            // txtbx2
+            // 
+            this.txtbx2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx2.Location = new System.Drawing.Point(194, 77);
+            this.txtbx2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx2.MaxLength = 16;
+            this.txtbx2.Name = "txtbx2";
+            this.txtbx2.Size = new System.Drawing.Size(154, 27);
+            this.txtbx2.TabIndex = 2;
+            // 
+            // txt3
+            // 
+            this.txt3.AutoSize = true;
+            this.txt3.BackColor = System.Drawing.Color.Transparent;
+            this.txt3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt3.Location = new System.Drawing.Point(373, 56);
+            this.txt3.Name = "txt3";
+            this.txt3.Size = new System.Drawing.Size(44, 19);
+            this.txt3.TabIndex = 0;
+            this.txt3.Text = "M.I.";
+            // 
+            // txtbx3
+            // 
+            this.txtbx3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx3.Location = new System.Drawing.Point(373, 77);
+            this.txtbx3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx3.MaxLength = 3;
+            this.txtbx3.Name = "txtbx3";
+            this.txtbx3.Size = new System.Drawing.Size(44, 27);
+            this.txtbx3.TabIndex = 3;
+            // 
+            // CTA
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(701, 452);
+            this.Controls.Add(this.txtbx3);
+            this.Controls.Add(this.txt3);
+            this.Controls.Add(this.txtbx2);
+            this.Controls.Add(this.txt2);
+            this.Controls.Add(this.txtbx1);
+            this.Controls.Add(this.txt1);
+            this.Controls.Add(this.CTF);
+            this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MaximizeBox = false;
+            this.MdiChildrenMinimizedAnchorBottom = false;
+            this.MinimizeBox = false;
+            this.Name = "CTA";
+            this.Text = "Contact Tracing App (CTA)";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private Label CTF;
+        private Label txt1;
+        private TextBox txtbx1;
+        private Label txt2;
+        private TextBox txtbx2;
+        private Label txt3;
+        private TextBox txtbx3;
     }
 }

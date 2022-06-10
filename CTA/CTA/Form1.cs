@@ -1,10 +1,11 @@
 namespace CTA
 {
-    public partial class Form1 : Form
+    public partial class CTA : Form
     {
-        public Form1()
+        public CTA()
         {
             InitializeComponent();
         }
+
     }
 }
