@@ -31,28 +31,29 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTA));
             this.CTF = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.Label();
-            this.txtbx1 = new System.Windows.Forms.TextBox();
             this.txt2 = new System.Windows.Forms.Label();
-            this.txtbx2 = new System.Windows.Forms.TextBox();
+            this.box2 = new System.Windows.Forms.TextBox();
             this.txt3 = new System.Windows.Forms.Label();
-            this.txtbx3 = new System.Windows.Forms.TextBox();
+            this.box3 = new System.Windows.Forms.TextBox();
             this.txt5 = new System.Windows.Forms.Label();
             this.txt6 = new System.Windows.Forms.Label();
-            this.txtbx5 = new System.Windows.Forms.TextBox();
-            this.txtbx6 = new System.Windows.Forms.TextBox();
-            this.txtbx7 = new System.Windows.Forms.TextBox();
+            this.box5 = new System.Windows.Forms.TextBox();
+            this.box6 = new System.Windows.Forms.TextBox();
+            this.box7 = new System.Windows.Forms.TextBox();
             this.txt7 = new System.Windows.Forms.Label();
             this.txt8 = new System.Windows.Forms.Label();
             this.txt4 = new System.Windows.Forms.Label();
-            this.txtbx4 = new System.Windows.Forms.TextBox();
-            this.txtbx10 = new System.Windows.Forms.TextBox();
-            this.txtbx9 = new System.Windows.Forms.TextBox();
-            this.txtbx8 = new System.Windows.Forms.TextBox();
+            this.box4 = new System.Windows.Forms.TextBox();
+            this.box10 = new System.Windows.Forms.TextBox();
+            this.box9 = new System.Windows.Forms.TextBox();
+            this.box8 = new System.Windows.Forms.TextBox();
             this.txt11 = new System.Windows.Forms.Label();
             this.txt10 = new System.Windows.Forms.Label();
             this.txt9 = new System.Windows.Forms.Label();
             this.MaleButton = new System.Windows.Forms.RadioButton();
             this.FemaleButton = new System.Windows.Forms.RadioButton();
+            this.box1 = new System.Windows.Forms.TextBox();
+            this.SubmitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CTF
@@ -79,16 +80,6 @@
             this.txt1.TabIndex = 0;
             this.txt1.Text = "Last Name";
             // 
-            // txtbx1
-            // 
-            this.txtbx1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx1.Location = new System.Drawing.Point(12, 77);
-            this.txtbx1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx1.MaxLength = 16;
-            this.txtbx1.Name = "txtbx1";
-            this.txtbx1.Size = new System.Drawing.Size(154, 27);
-            this.txtbx1.TabIndex = 1;
-            // 
             // txt2
             // 
             this.txt2.AutoSize = true;
@@ -101,15 +92,15 @@
             this.txt2.TabIndex = 0;
             this.txt2.Text = "First Name";
             // 
-            // txtbx2
+            // box2
             // 
-            this.txtbx2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx2.Location = new System.Drawing.Point(194, 77);
-            this.txtbx2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx2.MaxLength = 16;
-            this.txtbx2.Name = "txtbx2";
-            this.txtbx2.Size = new System.Drawing.Size(154, 27);
-            this.txtbx2.TabIndex = 2;
+            this.box2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box2.Location = new System.Drawing.Point(194, 77);
+            this.box2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box2.MaxLength = 16;
+            this.box2.Name = "box2";
+            this.box2.Size = new System.Drawing.Size(154, 27);
+            this.box2.TabIndex = 2;
             // 
             // txt3
             // 
@@ -123,15 +114,15 @@
             this.txt3.TabIndex = 0;
             this.txt3.Text = "M.I.";
             // 
-            // txtbx3
+            // box3
             // 
-            this.txtbx3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx3.Location = new System.Drawing.Point(373, 77);
-            this.txtbx3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx3.MaxLength = 3;
-            this.txtbx3.Name = "txtbx3";
-            this.txtbx3.Size = new System.Drawing.Size(44, 27);
-            this.txtbx3.TabIndex = 3;
+            this.box3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box3.Location = new System.Drawing.Point(373, 77);
+            this.box3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box3.MaxLength = 3;
+            this.box3.Name = "box3";
+            this.box3.Size = new System.Drawing.Size(44, 27);
+            this.box3.TabIndex = 3;
             // 
             // txt5
             // 
@@ -157,35 +148,35 @@
             this.txt6.TabIndex = 0;
             this.txt6.Text = "Barangay";
             // 
-            // txtbx5
+            // box5
             // 
-            this.txtbx5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx5.Location = new System.Drawing.Point(12, 143);
-            this.txtbx5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx5.MaxLength = 16;
-            this.txtbx5.Name = "txtbx5";
-            this.txtbx5.Size = new System.Drawing.Size(154, 27);
-            this.txtbx5.TabIndex = 5;
+            this.box5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box5.Location = new System.Drawing.Point(12, 143);
+            this.box5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box5.MaxLength = 16;
+            this.box5.Name = "box5";
+            this.box5.Size = new System.Drawing.Size(154, 27);
+            this.box5.TabIndex = 5;
             // 
-            // txtbx6
+            // box6
             // 
-            this.txtbx6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx6.Location = new System.Drawing.Point(194, 143);
-            this.txtbx6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx6.MaxLength = 16;
-            this.txtbx6.Name = "txtbx6";
-            this.txtbx6.Size = new System.Drawing.Size(154, 27);
-            this.txtbx6.TabIndex = 6;
+            this.box6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box6.Location = new System.Drawing.Point(194, 143);
+            this.box6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box6.MaxLength = 16;
+            this.box6.Name = "box6";
+            this.box6.Size = new System.Drawing.Size(154, 27);
+            this.box6.TabIndex = 6;
             // 
-            // txtbx7
+            // box7
             // 
-            this.txtbx7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx7.Location = new System.Drawing.Point(373, 143);
-            this.txtbx7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx7.MaxLength = 16;
-            this.txtbx7.Name = "txtbx7";
-            this.txtbx7.Size = new System.Drawing.Size(154, 27);
-            this.txtbx7.TabIndex = 7;
+            this.box7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box7.Location = new System.Drawing.Point(373, 143);
+            this.box7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box7.MaxLength = 16;
+            this.box7.Name = "box7";
+            this.box7.Size = new System.Drawing.Size(154, 27);
+            this.box7.TabIndex = 7;
             // 
             // txt7
             // 
@@ -223,45 +214,45 @@
             this.txt4.TabIndex = 0;
             this.txt4.Text = "Age";
             // 
-            // txtbx4
+            // box4
             // 
-            this.txtbx4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx4.Location = new System.Drawing.Point(458, 77);
-            this.txtbx4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx4.MaxLength = 2;
-            this.txtbx4.Name = "txtbx4";
-            this.txtbx4.Size = new System.Drawing.Size(44, 27);
-            this.txtbx4.TabIndex = 4;
+            this.box4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box4.Location = new System.Drawing.Point(458, 77);
+            this.box4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box4.MaxLength = 2;
+            this.box4.Name = "box4";
+            this.box4.Size = new System.Drawing.Size(44, 27);
+            this.box4.TabIndex = 4;
             // 
-            // txtbx10
+            // box10
             // 
-            this.txtbx10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx10.Location = new System.Drawing.Point(373, 208);
-            this.txtbx10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx10.MaxLength = 16;
-            this.txtbx10.Name = "txtbx10";
-            this.txtbx10.Size = new System.Drawing.Size(154, 27);
-            this.txtbx10.TabIndex = 10;
+            this.box10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box10.Location = new System.Drawing.Point(373, 208);
+            this.box10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box10.MaxLength = 16;
+            this.box10.Name = "box10";
+            this.box10.Size = new System.Drawing.Size(154, 27);
+            this.box10.TabIndex = 10;
             // 
-            // txtbx9
+            // box9
             // 
-            this.txtbx9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx9.Location = new System.Drawing.Point(194, 208);
-            this.txtbx9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx9.MaxLength = 16;
-            this.txtbx9.Name = "txtbx9";
-            this.txtbx9.Size = new System.Drawing.Size(154, 27);
-            this.txtbx9.TabIndex = 9;
+            this.box9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box9.Location = new System.Drawing.Point(194, 208);
+            this.box9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box9.MaxLength = 16;
+            this.box9.Name = "box9";
+            this.box9.Size = new System.Drawing.Size(154, 27);
+            this.box9.TabIndex = 9;
             // 
-            // txtbx8
+            // box8
             // 
-            this.txtbx8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx8.Location = new System.Drawing.Point(12, 208);
-            this.txtbx8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx8.MaxLength = 16;
-            this.txtbx8.Name = "txtbx8";
-            this.txtbx8.Size = new System.Drawing.Size(154, 27);
-            this.txtbx8.TabIndex = 8;
+            this.box8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box8.Location = new System.Drawing.Point(12, 208);
+            this.box8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box8.MaxLength = 16;
+            this.box8.Name = "box8";
+            this.box8.Size = new System.Drawing.Size(154, 27);
+            this.box8.TabIndex = 8;
             // 
             // txt11
             // 
@@ -324,6 +315,29 @@
             this.FemaleButton.Text = "Female";
             this.FemaleButton.UseVisualStyleBackColor = false;
             // 
+            // box1
+            // 
+            this.box1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.box1.Location = new System.Drawing.Point(12, 77);
+            this.box1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box1.MaxLength = 16;
+            this.box1.Name = "box1";
+            this.box1.Size = new System.Drawing.Size(154, 27);
+            this.box1.TabIndex = 1;
+            // 
+            // SubmitButton
+            // 
+            this.SubmitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubmitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SubmitButton.Location = new System.Drawing.Point(596, 250);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(73, 24);
+            this.SubmitButton.TabIndex = 11;
+            this.SubmitButton.Text = "Submit";
+            this.SubmitButton.UseVisualStyleBackColor = false;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -331,28 +345,29 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 286);
+            this.Controls.Add(this.SubmitButton);
+            this.Controls.Add(this.box1);
             this.Controls.Add(this.FemaleButton);
             this.Controls.Add(this.MaleButton);
             this.Controls.Add(this.txt11);
             this.Controls.Add(this.txt10);
             this.Controls.Add(this.txt9);
-            this.Controls.Add(this.txtbx10);
-            this.Controls.Add(this.txtbx9);
-            this.Controls.Add(this.txtbx8);
-            this.Controls.Add(this.txtbx4);
+            this.Controls.Add(this.box10);
+            this.Controls.Add(this.box9);
+            this.Controls.Add(this.box8);
+            this.Controls.Add(this.box4);
             this.Controls.Add(this.txt4);
             this.Controls.Add(this.txt8);
             this.Controls.Add(this.txt7);
-            this.Controls.Add(this.txtbx7);
-            this.Controls.Add(this.txtbx6);
-            this.Controls.Add(this.txtbx5);
+            this.Controls.Add(this.box7);
+            this.Controls.Add(this.box6);
+            this.Controls.Add(this.box5);
             this.Controls.Add(this.txt6);
             this.Controls.Add(this.txt5);
-            this.Controls.Add(this.txtbx3);
+            this.Controls.Add(this.box3);
             this.Controls.Add(this.txt3);
-            this.Controls.Add(this.txtbx2);
+            this.Controls.Add(this.box2);
             this.Controls.Add(this.txt2);
-            this.Controls.Add(this.txtbx1);
             this.Controls.Add(this.txt1);
             this.Controls.Add(this.CTF);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -370,27 +385,28 @@
 
         private Label CTF;
         private Label txt1;
-        private TextBox txtbx1;
         private Label txt2;
-        private TextBox txtbx2;
+        private TextBox box2;
         private Label txt3;
-        private TextBox txtbx3;
+        private TextBox box3;
         private Label txt5;
         private Label txt6;
-        private TextBox txtbx5;
-        private TextBox txtbx6;
-        private TextBox txtbx7;
+        private TextBox box5;
+        private TextBox box6;
+        private TextBox box7;
         private Label txt7;
         private Label txt8;
         private Label txt4;
-        private TextBox txtbx4;
-        private TextBox txtbx10;
-        private TextBox txtbx9;
-        private TextBox txtbx8;
+        private TextBox box4;
+        private TextBox box10;
+        private TextBox box9;
+        private TextBox box8;
         private Label txt11;
         private Label txt10;
         private Label txt9;
         private RadioButton MaleButton;
         private RadioButton FemaleButton;
+        private TextBox box1;
+        private Button SubmitButton;
     }
 }
