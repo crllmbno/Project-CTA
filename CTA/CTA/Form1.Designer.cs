@@ -36,6 +36,9 @@
             this.txtbx2 = new System.Windows.Forms.TextBox();
             this.txt3 = new System.Windows.Forms.Label();
             this.txtbx3 = new System.Windows.Forms.TextBox();
+            this.txt4 = new System.Windows.Forms.Label();
+            this.MaleButton = new System.Windows.Forms.RadioButton();
+            this.FemaleButton = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // CTF
@@ -44,7 +47,7 @@
             this.CTF.BackColor = System.Drawing.Color.Transparent;
             this.CTF.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CTF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CTF.Location = new System.Drawing.Point(194, 7);
+            this.CTF.Location = new System.Drawing.Point(179, 9);
             this.CTF.Name = "CTF";
             this.CTF.Size = new System.Drawing.Size(309, 33);
             this.CTF.TabIndex = 0;
@@ -116,6 +119,46 @@
             this.txtbx3.Size = new System.Drawing.Size(44, 27);
             this.txtbx3.TabIndex = 3;
             // 
+            // txt4
+            // 
+            this.txt4.AutoSize = true;
+            this.txt4.BackColor = System.Drawing.Color.Transparent;
+            this.txt4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt4.Location = new System.Drawing.Point(12, 119);
+            this.txt4.Name = "txt4";
+            this.txt4.Size = new System.Drawing.Size(36, 19);
+            this.txt4.TabIndex = 0;
+            this.txt4.Text = "Sex";
+            // 
+            // MaleButton
+            // 
+            this.MaleButton.AutoSize = true;
+            this.MaleButton.BackColor = System.Drawing.Color.Transparent;
+            this.MaleButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MaleButton.ForeColor = System.Drawing.Color.Transparent;
+            this.MaleButton.Location = new System.Drawing.Point(12, 141);
+            this.MaleButton.Name = "MaleButton";
+            this.MaleButton.Size = new System.Drawing.Size(53, 18);
+            this.MaleButton.TabIndex = 4;
+            this.MaleButton.TabStop = true;
+            this.MaleButton.Text = "Male";
+            this.MaleButton.UseVisualStyleBackColor = false;
+            // 
+            // FemaleButton
+            // 
+            this.FemaleButton.AutoSize = true;
+            this.FemaleButton.BackColor = System.Drawing.Color.Transparent;
+            this.FemaleButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FemaleButton.ForeColor = System.Drawing.Color.Transparent;
+            this.FemaleButton.Location = new System.Drawing.Point(12, 165);
+            this.FemaleButton.Name = "FemaleButton";
+            this.FemaleButton.Size = new System.Drawing.Size(66, 18);
+            this.FemaleButton.TabIndex = 5;
+            this.FemaleButton.TabStop = true;
+            this.FemaleButton.Text = "Female";
+            this.FemaleButton.UseVisualStyleBackColor = false;
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -123,6 +166,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(701, 452);
+            this.Controls.Add(this.FemaleButton);
+            this.Controls.Add(this.MaleButton);
+            this.Controls.Add(this.txt4);
             this.Controls.Add(this.txtbx3);
             this.Controls.Add(this.txt3);
             this.Controls.Add(this.txtbx2);
@@ -150,5 +196,8 @@
         private TextBox txtbx2;
         private Label txt3;
         private TextBox txtbx3;
+        private Label txt4;
+        private RadioButton MaleButton;
+        private RadioButton FemaleButton;
     }
 }
