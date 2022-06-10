@@ -39,6 +39,12 @@
             this.txt4 = new System.Windows.Forms.Label();
             this.MaleButton = new System.Windows.Forms.RadioButton();
             this.FemaleButton = new System.Windows.Forms.RadioButton();
+            this.txt5 = new System.Windows.Forms.Label();
+            this.txtbx4 = new System.Windows.Forms.TextBox();
+            this.txtbx5 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt6 = new System.Windows.Forms.Label();
+            this.txt7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CTF
@@ -159,6 +165,72 @@
             this.FemaleButton.Text = "Female";
             this.FemaleButton.UseVisualStyleBackColor = false;
             // 
+            // txt5
+            // 
+            this.txt5.AutoSize = true;
+            this.txt5.BackColor = System.Drawing.Color.Transparent;
+            this.txt5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt5.Location = new System.Drawing.Point(115, 119);
+            this.txt5.Name = "txt5";
+            this.txt5.Size = new System.Drawing.Size(84, 19);
+            this.txt5.TabIndex = 0;
+            this.txt5.Text = "Barangay";
+            // 
+            // txtbx4
+            // 
+            this.txtbx4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx4.Location = new System.Drawing.Point(115, 140);
+            this.txtbx4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx4.MaxLength = 16;
+            this.txtbx4.Name = "txtbx4";
+            this.txtbx4.Size = new System.Drawing.Size(154, 27);
+            this.txtbx4.TabIndex = 6;
+            // 
+            // txtbx5
+            // 
+            this.txtbx5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx5.Location = new System.Drawing.Point(287, 140);
+            this.txtbx5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx5.MaxLength = 16;
+            this.txtbx5.Name = "txtbx5";
+            this.txtbx5.Size = new System.Drawing.Size(154, 27);
+            this.txtbx5.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(458, 140);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.MaxLength = 16;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(154, 27);
+            this.textBox1.TabIndex = 8;
+            // 
+            // txt6
+            // 
+            this.txt6.AutoSize = true;
+            this.txt6.BackColor = System.Drawing.Color.Transparent;
+            this.txt6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt6.Location = new System.Drawing.Point(287, 119);
+            this.txt6.Name = "txt6";
+            this.txt6.Size = new System.Drawing.Size(44, 19);
+            this.txt6.TabIndex = 0;
+            this.txt6.Text = "City";
+            // 
+            // txt7
+            // 
+            this.txt7.AutoSize = true;
+            this.txt7.BackColor = System.Drawing.Color.Transparent;
+            this.txt7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt7.Location = new System.Drawing.Point(458, 119);
+            this.txt7.Name = "txt7";
+            this.txt7.Size = new System.Drawing.Size(79, 19);
+            this.txt7.TabIndex = 0;
+            this.txt7.Text = "Province";
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -166,6 +238,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(701, 452);
+            this.Controls.Add(this.txt7);
+            this.Controls.Add(this.txt6);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbx5);
+            this.Controls.Add(this.txtbx4);
+            this.Controls.Add(this.txt5);
             this.Controls.Add(this.FemaleButton);
             this.Controls.Add(this.MaleButton);
             this.Controls.Add(this.txt4);
@@ -199,5 +277,11 @@
         private Label txt4;
         private RadioButton MaleButton;
         private RadioButton FemaleButton;
+        private Label txt5;
+        private TextBox txtbx4;
+        private TextBox txtbx5;
+        private TextBox textBox1;
+        private Label txt6;
+        private Label txt7;
     }
 }
