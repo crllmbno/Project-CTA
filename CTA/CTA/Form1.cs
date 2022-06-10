@@ -21,8 +21,10 @@ namespace CTA
             {
                 submit.WriteLine("Sex: " + FemaleButton.Text);
             }
-
-
+            submit.WriteLine("Address: " + box5.Text + ", " + box6.Text + ", " + box7.Text);
+            submit.WriteLine("Cellphone#: " + box8.Text);
+            submit.WriteLine("Telephone#: " + box9.Text);
+            submit.WriteLine("Email: " + box10.Text);
             submit.WriteLine("");
             submit.WriteLine("");
             submit.WriteLine("");
@@ -37,6 +39,8 @@ namespace CTA
             box8.Clear();
             box9.Clear();
             box10.Clear();
+            MaleButton.Checked = false;
+            FemaleButton.Checked = false;
 
         }
     }
