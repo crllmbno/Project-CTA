@@ -37,16 +37,22 @@
             this.txt3 = new System.Windows.Forms.Label();
             this.txtbx3 = new System.Windows.Forms.TextBox();
             this.txt5 = new System.Windows.Forms.Label();
-            this.MaleButton = new System.Windows.Forms.RadioButton();
-            this.FemaleButton = new System.Windows.Forms.RadioButton();
             this.txt6 = new System.Windows.Forms.Label();
-            this.txtbx4 = new System.Windows.Forms.TextBox();
             this.txtbx5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbx6 = new System.Windows.Forms.TextBox();
+            this.txtbx7 = new System.Windows.Forms.TextBox();
             this.txt7 = new System.Windows.Forms.Label();
             this.txt8 = new System.Windows.Forms.Label();
             this.txt4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtbx4 = new System.Windows.Forms.TextBox();
+            this.txtbx10 = new System.Windows.Forms.TextBox();
+            this.txtbx9 = new System.Windows.Forms.TextBox();
+            this.txtbx8 = new System.Windows.Forms.TextBox();
+            this.txt11 = new System.Windows.Forms.Label();
+            this.txt10 = new System.Windows.Forms.Label();
+            this.txt9 = new System.Windows.Forms.Label();
+            this.MaleButton = new System.Windows.Forms.RadioButton();
+            this.FemaleButton = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // CTF
@@ -133,39 +139,11 @@
             this.txt5.BackColor = System.Drawing.Color.Transparent;
             this.txt5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt5.Location = new System.Drawing.Point(12, 119);
+            this.txt5.Location = new System.Drawing.Point(539, 56);
             this.txt5.Name = "txt5";
             this.txt5.Size = new System.Drawing.Size(36, 19);
             this.txt5.TabIndex = 0;
             this.txt5.Text = "Sex";
-            // 
-            // MaleButton
-            // 
-            this.MaleButton.AutoSize = true;
-            this.MaleButton.BackColor = System.Drawing.Color.Transparent;
-            this.MaleButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MaleButton.ForeColor = System.Drawing.Color.Transparent;
-            this.MaleButton.Location = new System.Drawing.Point(12, 141);
-            this.MaleButton.Name = "MaleButton";
-            this.MaleButton.Size = new System.Drawing.Size(53, 18);
-            this.MaleButton.TabIndex = 0;
-            this.MaleButton.TabStop = true;
-            this.MaleButton.Text = "Male";
-            this.MaleButton.UseVisualStyleBackColor = false;
-            // 
-            // FemaleButton
-            // 
-            this.FemaleButton.AutoSize = true;
-            this.FemaleButton.BackColor = System.Drawing.Color.Transparent;
-            this.FemaleButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FemaleButton.ForeColor = System.Drawing.Color.Transparent;
-            this.FemaleButton.Location = new System.Drawing.Point(12, 165);
-            this.FemaleButton.Name = "FemaleButton";
-            this.FemaleButton.Size = new System.Drawing.Size(66, 18);
-            this.FemaleButton.TabIndex = 0;
-            this.FemaleButton.TabStop = true;
-            this.FemaleButton.Text = "Female";
-            this.FemaleButton.UseVisualStyleBackColor = false;
             // 
             // txt6
             // 
@@ -173,41 +151,41 @@
             this.txt6.BackColor = System.Drawing.Color.Transparent;
             this.txt6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt6.Location = new System.Drawing.Point(115, 119);
+            this.txt6.Location = new System.Drawing.Point(12, 122);
             this.txt6.Name = "txt6";
             this.txt6.Size = new System.Drawing.Size(84, 19);
             this.txt6.TabIndex = 0;
             this.txt6.Text = "Barangay";
             // 
-            // txtbx4
-            // 
-            this.txtbx4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx4.Location = new System.Drawing.Point(115, 140);
-            this.txtbx4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtbx4.MaxLength = 16;
-            this.txtbx4.Name = "txtbx4";
-            this.txtbx4.Size = new System.Drawing.Size(154, 27);
-            this.txtbx4.TabIndex = 5;
-            // 
             // txtbx5
             // 
             this.txtbx5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbx5.Location = new System.Drawing.Point(287, 140);
+            this.txtbx5.Location = new System.Drawing.Point(12, 143);
             this.txtbx5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbx5.MaxLength = 16;
             this.txtbx5.Name = "txtbx5";
             this.txtbx5.Size = new System.Drawing.Size(154, 27);
-            this.txtbx5.TabIndex = 6;
+            this.txtbx5.TabIndex = 5;
             // 
-            // textBox1
+            // txtbx6
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(458, 140);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.MaxLength = 16;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 27);
-            this.textBox1.TabIndex = 7;
+            this.txtbx6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx6.Location = new System.Drawing.Point(194, 143);
+            this.txtbx6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx6.MaxLength = 16;
+            this.txtbx6.Name = "txtbx6";
+            this.txtbx6.Size = new System.Drawing.Size(154, 27);
+            this.txtbx6.TabIndex = 6;
+            // 
+            // txtbx7
+            // 
+            this.txtbx7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx7.Location = new System.Drawing.Point(373, 143);
+            this.txtbx7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx7.MaxLength = 16;
+            this.txtbx7.Name = "txtbx7";
+            this.txtbx7.Size = new System.Drawing.Size(154, 27);
+            this.txtbx7.TabIndex = 7;
             // 
             // txt7
             // 
@@ -215,7 +193,7 @@
             this.txt7.BackColor = System.Drawing.Color.Transparent;
             this.txt7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt7.Location = new System.Drawing.Point(287, 119);
+            this.txt7.Location = new System.Drawing.Point(194, 122);
             this.txt7.Name = "txt7";
             this.txt7.Size = new System.Drawing.Size(44, 19);
             this.txt7.TabIndex = 0;
@@ -227,7 +205,7 @@
             this.txt8.BackColor = System.Drawing.Color.Transparent;
             this.txt8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt8.Location = new System.Drawing.Point(458, 119);
+            this.txt8.Location = new System.Drawing.Point(373, 122);
             this.txt8.Name = "txt8";
             this.txt8.Size = new System.Drawing.Size(79, 19);
             this.txt8.TabIndex = 0;
@@ -245,15 +223,106 @@
             this.txt4.TabIndex = 0;
             this.txt4.Text = "Age";
             // 
-            // textBox2
+            // txtbx4
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(458, 77);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.MaxLength = 2;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(44, 27);
-            this.textBox2.TabIndex = 4;
+            this.txtbx4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx4.Location = new System.Drawing.Point(458, 77);
+            this.txtbx4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx4.MaxLength = 2;
+            this.txtbx4.Name = "txtbx4";
+            this.txtbx4.Size = new System.Drawing.Size(44, 27);
+            this.txtbx4.TabIndex = 4;
+            // 
+            // txtbx10
+            // 
+            this.txtbx10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx10.Location = new System.Drawing.Point(373, 208);
+            this.txtbx10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx10.MaxLength = 16;
+            this.txtbx10.Name = "txtbx10";
+            this.txtbx10.Size = new System.Drawing.Size(154, 27);
+            this.txtbx10.TabIndex = 10;
+            // 
+            // txtbx9
+            // 
+            this.txtbx9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx9.Location = new System.Drawing.Point(194, 208);
+            this.txtbx9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx9.MaxLength = 16;
+            this.txtbx9.Name = "txtbx9";
+            this.txtbx9.Size = new System.Drawing.Size(154, 27);
+            this.txtbx9.TabIndex = 9;
+            // 
+            // txtbx8
+            // 
+            this.txtbx8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbx8.Location = new System.Drawing.Point(12, 208);
+            this.txtbx8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbx8.MaxLength = 16;
+            this.txtbx8.Name = "txtbx8";
+            this.txtbx8.Size = new System.Drawing.Size(154, 27);
+            this.txtbx8.TabIndex = 8;
+            // 
+            // txt11
+            // 
+            this.txt11.AutoSize = true;
+            this.txt11.BackColor = System.Drawing.Color.Transparent;
+            this.txt11.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt11.Location = new System.Drawing.Point(373, 187);
+            this.txt11.Name = "txt11";
+            this.txt11.Size = new System.Drawing.Size(124, 19);
+            this.txt11.TabIndex = 0;
+            this.txt11.Text = "Email Address";
+            // 
+            // txt10
+            // 
+            this.txt10.AutoSize = true;
+            this.txt10.BackColor = System.Drawing.Color.Transparent;
+            this.txt10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt10.Location = new System.Drawing.Point(194, 187);
+            this.txt10.Name = "txt10";
+            this.txt10.Size = new System.Drawing.Size(103, 19);
+            this.txt10.TabIndex = 0;
+            this.txt10.Text = "Telephone#";
+            // 
+            // txt9
+            // 
+            this.txt9.AutoSize = true;
+            this.txt9.BackColor = System.Drawing.Color.Transparent;
+            this.txt9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt9.Location = new System.Drawing.Point(12, 187);
+            this.txt9.Name = "txt9";
+            this.txt9.Size = new System.Drawing.Size(102, 19);
+            this.txt9.TabIndex = 0;
+            this.txt9.Text = "Cellphone#";
+            // 
+            // MaleButton
+            // 
+            this.MaleButton.AutoSize = true;
+            this.MaleButton.BackColor = System.Drawing.Color.Transparent;
+            this.MaleButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MaleButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.MaleButton.Location = new System.Drawing.Point(539, 77);
+            this.MaleButton.Name = "MaleButton";
+            this.MaleButton.Size = new System.Drawing.Size(49, 18);
+            this.MaleButton.TabIndex = 0;
+            this.MaleButton.Text = "Male";
+            this.MaleButton.UseVisualStyleBackColor = false;
+            // 
+            // FemaleButton
+            // 
+            this.FemaleButton.AutoSize = true;
+            this.FemaleButton.BackColor = System.Drawing.Color.Transparent;
+            this.FemaleButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.FemaleButton.Location = new System.Drawing.Point(539, 101);
+            this.FemaleButton.Name = "FemaleButton";
+            this.FemaleButton.Size = new System.Drawing.Size(63, 18);
+            this.FemaleButton.TabIndex = 0;
+            this.FemaleButton.Text = "Female";
+            this.FemaleButton.UseVisualStyleBackColor = false;
             // 
             // CTA
             // 
@@ -261,17 +330,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(701, 452);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(681, 286);
+            this.Controls.Add(this.FemaleButton);
+            this.Controls.Add(this.MaleButton);
+            this.Controls.Add(this.txt11);
+            this.Controls.Add(this.txt10);
+            this.Controls.Add(this.txt9);
+            this.Controls.Add(this.txtbx10);
+            this.Controls.Add(this.txtbx9);
+            this.Controls.Add(this.txtbx8);
+            this.Controls.Add(this.txtbx4);
             this.Controls.Add(this.txt4);
             this.Controls.Add(this.txt8);
             this.Controls.Add(this.txt7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbx7);
+            this.Controls.Add(this.txtbx6);
             this.Controls.Add(this.txtbx5);
-            this.Controls.Add(this.txtbx4);
             this.Controls.Add(this.txt6);
-            this.Controls.Add(this.FemaleButton);
-            this.Controls.Add(this.MaleButton);
             this.Controls.Add(this.txt5);
             this.Controls.Add(this.txtbx3);
             this.Controls.Add(this.txt3);
@@ -301,15 +376,21 @@
         private Label txt3;
         private TextBox txtbx3;
         private Label txt5;
-        private RadioButton MaleButton;
-        private RadioButton FemaleButton;
         private Label txt6;
-        private TextBox txtbx4;
         private TextBox txtbx5;
-        private TextBox textBox1;
+        private TextBox txtbx6;
+        private TextBox txtbx7;
         private Label txt7;
         private Label txt8;
         private Label txt4;
-        private TextBox textBox2;
+        private TextBox txtbx4;
+        private TextBox txtbx10;
+        private TextBox txtbx9;
+        private TextBox txtbx8;
+        private Label txt11;
+        private Label txt10;
+        private Label txt9;
+        private RadioButton MaleButton;
+        private RadioButton FemaleButton;
     }
 }
