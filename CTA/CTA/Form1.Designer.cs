@@ -229,17 +229,18 @@
             this.box10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.box10.Location = new System.Drawing.Point(373, 208);
             this.box10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.box10.MaxLength = 16;
+            this.box10.MaxLength = 32;
             this.box10.Name = "box10";
             this.box10.Size = new System.Drawing.Size(154, 27);
             this.box10.TabIndex = 10;
+            this.box10.Text = "@gmail.com";
             // 
             // box9
             // 
             this.box9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.box9.Location = new System.Drawing.Point(194, 208);
             this.box9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.box9.MaxLength = 16;
+            this.box9.MaxLength = 6;
             this.box9.Name = "box9";
             this.box9.Size = new System.Drawing.Size(154, 27);
             this.box9.TabIndex = 9;
@@ -249,10 +250,11 @@
             this.box8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.box8.Location = new System.Drawing.Point(12, 208);
             this.box8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.box8.MaxLength = 16;
+            this.box8.MaxLength = 11;
             this.box8.Name = "box8";
             this.box8.Size = new System.Drawing.Size(154, 27);
             this.box8.TabIndex = 8;
+            this.box8.Text = "09";
             // 
             // txt11
             // 

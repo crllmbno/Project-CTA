@@ -11,7 +11,7 @@ namespace CTA
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             StreamWriter submit = File.AppendText(@"List.txt");
-            submit.WriteLine("Name: " + box1.Text + ", " + box2.Text + " " + box3.Text);
+            submit.WriteLine("Name: " + box1.Text + ", " + box2.Text + " " + box3.Text + ".");
             submit.WriteLine("Age: " + box4.Text);
             if (MaleButton.Checked == true)
             {
