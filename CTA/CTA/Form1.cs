@@ -29,6 +29,7 @@ namespace CTA
             submit.WriteLine("");
             submit.WriteLine("");
             submit.Close();
+            MessageBox.Show("Form Submitted");
             box1.Clear();
             box2.Clear();
             box3.Clear();
