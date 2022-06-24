@@ -16,3 +16,21 @@ C:\Users\veria\Desktop\Contact Tracing App\CTA\CTA\obj\Debug\net6.0-windows\refi
 C:\Users\veria\Desktop\Contact Tracing App\CTA\CTA\obj\Debug\net6.0-windows\CTA.pdb
 C:\Users\veria\Desktop\Contact Tracing App\CTA\CTA\obj\Debug\net6.0-windows\CTA.genruntimeconfig.cache
 C:\Users\veria\Desktop\Contact Tracing App\CTA\CTA\obj\Debug\net6.0-windows\ref\CTA.dll
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\bin\Debug\net6.0-windows\CTA.exe
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\bin\Debug\net6.0-windows\CTA.deps.json
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\bin\Debug\net6.0-windows\CTA.runtimeconfig.json
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\bin\Debug\net6.0-windows\CTA.dll
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\bin\Debug\net6.0-windows\CTA.pdb
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.csproj.AssemblyReference.cache
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.CTA.resources
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.Properties.Resources.resources
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.csproj.GenerateResource.cache
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.AssemblyInfoInputs.cache
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.AssemblyInfo.cs
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.csproj.CoreCompileInputs.cache
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.dll
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\refint\CTA.dll
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.pdb
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.genruntimeconfig.cache
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\ref\CTA.dll
