@@ -55,6 +55,8 @@
             this.box1 = new System.Windows.Forms.TextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.ListBtn = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CTF
@@ -87,7 +89,7 @@
             this.txt2.BackColor = System.Drawing.Color.Transparent;
             this.txt2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt2.Location = new System.Drawing.Point(194, 56);
+            this.txt2.Location = new System.Drawing.Point(179, 56);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(97, 19);
             this.txt2.TabIndex = 0;
@@ -96,7 +98,7 @@
             // box2
             // 
             this.box2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.box2.Location = new System.Drawing.Point(194, 77);
+            this.box2.Location = new System.Drawing.Point(179, 77);
             this.box2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box2.MaxLength = 16;
             this.box2.Name = "box2";
@@ -109,7 +111,7 @@
             this.txt3.BackColor = System.Drawing.Color.Transparent;
             this.txt3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt3.Location = new System.Drawing.Point(373, 56);
+            this.txt3.Location = new System.Drawing.Point(349, 56);
             this.txt3.Name = "txt3";
             this.txt3.Size = new System.Drawing.Size(44, 19);
             this.txt3.TabIndex = 0;
@@ -118,7 +120,7 @@
             // box3
             // 
             this.box3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.box3.Location = new System.Drawing.Point(373, 77);
+            this.box3.Location = new System.Drawing.Point(349, 77);
             this.box3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box3.MaxLength = 3;
             this.box3.Name = "box3";
@@ -131,7 +133,7 @@
             this.txt5.BackColor = System.Drawing.Color.Transparent;
             this.txt5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt5.Location = new System.Drawing.Point(539, 56);
+            this.txt5.Location = new System.Drawing.Point(515, 56);
             this.txt5.Name = "txt5";
             this.txt5.Size = new System.Drawing.Size(36, 19);
             this.txt5.TabIndex = 0;
@@ -162,7 +164,7 @@
             // box6
             // 
             this.box6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.box6.Location = new System.Drawing.Point(194, 143);
+            this.box6.Location = new System.Drawing.Point(179, 143);
             this.box6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box6.MaxLength = 16;
             this.box6.Name = "box6";
@@ -172,7 +174,7 @@
             // box7
             // 
             this.box7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.box7.Location = new System.Drawing.Point(373, 143);
+            this.box7.Location = new System.Drawing.Point(349, 143);
             this.box7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box7.MaxLength = 16;
             this.box7.Name = "box7";
@@ -185,7 +187,7 @@
             this.txt7.BackColor = System.Drawing.Color.Transparent;
             this.txt7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt7.Location = new System.Drawing.Point(194, 122);
+            this.txt7.Location = new System.Drawing.Point(179, 122);
             this.txt7.Name = "txt7";
             this.txt7.Size = new System.Drawing.Size(44, 19);
             this.txt7.TabIndex = 0;
@@ -197,7 +199,7 @@
             this.txt8.BackColor = System.Drawing.Color.Transparent;
             this.txt8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt8.Location = new System.Drawing.Point(373, 122);
+            this.txt8.Location = new System.Drawing.Point(349, 122);
             this.txt8.Name = "txt8";
             this.txt8.Size = new System.Drawing.Size(79, 19);
             this.txt8.TabIndex = 0;
@@ -209,7 +211,7 @@
             this.txt4.BackColor = System.Drawing.Color.Transparent;
             this.txt4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt4.Location = new System.Drawing.Point(458, 56);
+            this.txt4.Location = new System.Drawing.Point(434, 56);
             this.txt4.Name = "txt4";
             this.txt4.Size = new System.Drawing.Size(39, 19);
             this.txt4.TabIndex = 0;
@@ -218,7 +220,7 @@
             // box4
             // 
             this.box4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.box4.Location = new System.Drawing.Point(458, 77);
+            this.box4.Location = new System.Drawing.Point(434, 77);
             this.box4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box4.MaxLength = 2;
             this.box4.Name = "box4";
@@ -228,7 +230,7 @@
             // box10
             // 
             this.box10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.box10.Location = new System.Drawing.Point(373, 208);
+            this.box10.Location = new System.Drawing.Point(349, 208);
             this.box10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box10.MaxLength = 32;
             this.box10.Name = "box10";
@@ -239,7 +241,7 @@
             // box9
             // 
             this.box9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.box9.Location = new System.Drawing.Point(194, 208);
+            this.box9.Location = new System.Drawing.Point(179, 208);
             this.box9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box9.MaxLength = 6;
             this.box9.Name = "box9";
@@ -263,7 +265,7 @@
             this.txt11.BackColor = System.Drawing.Color.Transparent;
             this.txt11.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt11.Location = new System.Drawing.Point(373, 187);
+            this.txt11.Location = new System.Drawing.Point(349, 187);
             this.txt11.Name = "txt11";
             this.txt11.Size = new System.Drawing.Size(124, 19);
             this.txt11.TabIndex = 0;
@@ -275,7 +277,7 @@
             this.txt10.BackColor = System.Drawing.Color.Transparent;
             this.txt10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt10.Location = new System.Drawing.Point(194, 187);
+            this.txt10.Location = new System.Drawing.Point(179, 187);
             this.txt10.Name = "txt10";
             this.txt10.Size = new System.Drawing.Size(103, 19);
             this.txt10.TabIndex = 0;
@@ -299,7 +301,7 @@
             this.MaleButton.BackColor = System.Drawing.Color.Transparent;
             this.MaleButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MaleButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.MaleButton.Location = new System.Drawing.Point(539, 77);
+            this.MaleButton.Location = new System.Drawing.Point(515, 77);
             this.MaleButton.Name = "MaleButton";
             this.MaleButton.Size = new System.Drawing.Size(49, 18);
             this.MaleButton.TabIndex = 0;
@@ -311,7 +313,7 @@
             this.FemaleButton.AutoSize = true;
             this.FemaleButton.BackColor = System.Drawing.Color.Transparent;
             this.FemaleButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.FemaleButton.Location = new System.Drawing.Point(539, 101);
+            this.FemaleButton.Location = new System.Drawing.Point(515, 101);
             this.FemaleButton.Name = "FemaleButton";
             this.FemaleButton.Size = new System.Drawing.Size(63, 18);
             this.FemaleButton.TabIndex = 0;
@@ -336,7 +338,7 @@
             this.SubmitButton.Location = new System.Drawing.Point(596, 250);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(73, 24);
-            this.SubmitButton.TabIndex = 11;
+            this.SubmitButton.TabIndex = 13;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
@@ -354,6 +356,29 @@
             this.ListBtn.UseVisualStyleBackColor = false;
             this.ListBtn.Click += new System.EventHandler(this.ListBtn_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(515, 208);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.MaxLength = 12;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(130, 27);
+            this.textBox1.TabIndex = 11;
+            this.textBox1.Text = "MM/DD/YYYY";
+            // 
+            // txt12
+            // 
+            this.txt12.AutoSize = true;
+            this.txt12.BackColor = System.Drawing.Color.Transparent;
+            this.txt12.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt12.Location = new System.Drawing.Point(515, 187);
+            this.txt12.Name = "txt12";
+            this.txt12.Size = new System.Drawing.Size(46, 19);
+            this.txt12.TabIndex = 14;
+            this.txt12.Text = "Date";
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -361,6 +386,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 286);
+            this.Controls.Add(this.txt12);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ListBtn);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.box1);
@@ -426,5 +453,7 @@
         private TextBox box1;
         private Button SubmitButton;
         private Button ListBtn;
+        private TextBox textBox1;
+        private Label txt12;
     }
 }
