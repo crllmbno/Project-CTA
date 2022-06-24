@@ -44,5 +44,16 @@ namespace CTA
             FemaleButton.Checked = false;
 
         }
+
+        private void ListBtn_Click(object sender, EventArgs e)
+        {
+            StreamReader reader = new StreamReader(@"C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\bin\Debug\net6.0-windows?\List.txt");
+
+            while (!reader.EndOfStream)
+            {
+                string line = reader.ReadLine();
+                MessageBox.Show(line);
+            }
+        }
     }
 }
