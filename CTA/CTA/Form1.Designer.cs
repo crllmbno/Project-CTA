@@ -54,11 +54,12 @@
             this.FemaleButton = new System.Windows.Forms.RadioButton();
             this.box1 = new System.Windows.Forms.TextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
-            this.ListBtn = new System.Windows.Forms.Button();
+            this.SrchBtn = new System.Windows.Forms.Button();
             this.txt12 = new System.Windows.Forms.Label();
             this.MonthBox = new System.Windows.Forms.ComboBox();
             this.DayBox = new System.Windows.Forms.ComboBox();
             this.YearBox = new System.Windows.Forms.ComboBox();
+            this.ListBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // CTF
@@ -345,18 +346,18 @@
             this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
-            // ListBtn
+            // SrchBtn
             // 
-            this.ListBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ListBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ListBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ListBtn.Location = new System.Drawing.Point(12, 312);
-            this.ListBtn.Name = "ListBtn";
-            this.ListBtn.Size = new System.Drawing.Size(73, 24);
-            this.ListBtn.TabIndex = 14;
-            this.ListBtn.Text = "Show List";
-            this.ListBtn.UseVisualStyleBackColor = false;
-            this.ListBtn.Click += new System.EventHandler(this.ListBtn_Click);
+            this.SrchBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.SrchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SrchBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SrchBtn.Location = new System.Drawing.Point(12, 312);
+            this.SrchBtn.Name = "SrchBtn";
+            this.SrchBtn.Size = new System.Drawing.Size(102, 24);
+            this.SrchBtn.TabIndex = 14;
+            this.SrchBtn.Text = "Search Date";
+            this.SrchBtn.UseVisualStyleBackColor = false;
+            this.SrchBtn.Click += new System.EventHandler(this.ListBtn_Click);
             // 
             // txt12
             // 
@@ -951,18 +952,27 @@
             this.YearBox.Text = "Year";
             this.YearBox.SelectedIndexChanged += new System.EventHandler(this.YearBox_SelectedIndexChanged);
             // 
+            // ListBox
+            // 
+            this.ListBox.Location = new System.Drawing.Point(12, 352);
+            this.ListBox.Name = "ListBox";
+            this.ListBox.Size = new System.Drawing.Size(658, 320);
+            this.ListBox.TabIndex = 16;
+            this.ListBox.Text = "";
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(681, 359);
+            this.ClientSize = new System.Drawing.Size(681, 681);
+            this.Controls.Add(this.ListBox);
             this.Controls.Add(this.YearBox);
             this.Controls.Add(this.DayBox);
             this.Controls.Add(this.MonthBox);
             this.Controls.Add(this.txt12);
-            this.Controls.Add(this.ListBtn);
+            this.Controls.Add(this.SrchBtn);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.box1);
             this.Controls.Add(this.FemaleButton);
@@ -1027,10 +1037,11 @@
         private RadioButton FemaleButton;
         private TextBox box1;
         private Button SubmitButton;
-        private Button ListBtn;
+        private Button SrchBtn;
         private Label txt12;
         private ComboBox MonthBox;
         private ComboBox DayBox;
         private ComboBox YearBox;
+        private RichTextBox ListBox;
     }
 }
