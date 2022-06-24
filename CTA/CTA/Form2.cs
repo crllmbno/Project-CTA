@@ -19,10 +19,11 @@ namespace CTA
 
         private void Search_Click(object sender, EventArgs e)
         {
+          
             StreamReader search = new StreamReader(Application.StartupPath + "\\New List\\" + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text + ".txt");
             SearchWindow.Text = search.ReadToEnd();
-
             search.Close();
+
         }
 
         private void ext_Click(object sender, EventArgs e)
