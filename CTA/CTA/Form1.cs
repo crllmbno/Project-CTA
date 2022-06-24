@@ -43,6 +43,9 @@ namespace CTA
             LB.Items.Add("Telephone#: " + box9.Text);
             LB.Items.Add("Email: " + box10.Text);
             LB.Items.Add("Date Recorded: " + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text);
+            LB.Items.Add(" ");
+            LB.Items.Add(" ");
+            LB.Items.Add(" ");
 
             submit.Close();
             MessageBox.Show("Form Submitted");
