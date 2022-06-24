@@ -352,6 +352,7 @@
             this.ListBtn.TabIndex = 12;
             this.ListBtn.Text = "Show List";
             this.ListBtn.UseVisualStyleBackColor = false;
+            this.ListBtn.Click += new System.EventHandler(this.ListBtn_Click);
             // 
             // CTA
             // 
