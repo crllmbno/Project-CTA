@@ -1,0 +1,22 @@
+Name: Anderson, Drey C..
+Age: 69
+Sex: Male
+Address: Konoha, Manila, Philippines
+Cellphone#: 09123456789
+Telephone#: 021610
+Email: pogiako123@gmail.com
+Date Recorded: January 1, 2000
+
+
+
+Name: Anderson, Gab M.
+Age: 69
+Sex: Female
+Address: Konoha, Manila, Philippines
+Cellphone#: 09987654321
+Telephone#: 192831
+Email: magandaako@gmail.com
+Date Recorded: January 1, 2000
+
+
+
