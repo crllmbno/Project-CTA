@@ -54,6 +54,7 @@
             this.FemaleButton = new System.Windows.Forms.RadioButton();
             this.box1 = new System.Windows.Forms.TextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
+            this.ListBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CTF
@@ -340,6 +341,18 @@
             this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
+            // ListBtn
+            // 
+            this.ListBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ListBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ListBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ListBtn.Location = new System.Drawing.Point(12, 250);
+            this.ListBtn.Name = "ListBtn";
+            this.ListBtn.Size = new System.Drawing.Size(73, 24);
+            this.ListBtn.TabIndex = 12;
+            this.ListBtn.Text = "Show List";
+            this.ListBtn.UseVisualStyleBackColor = false;
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -347,6 +360,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 286);
+            this.Controls.Add(this.ListBtn);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.box1);
             this.Controls.Add(this.FemaleButton);
@@ -410,5 +424,6 @@
         private RadioButton FemaleButton;
         private TextBox box1;
         private Button SubmitButton;
+        private Button ListBtn;
     }
 }

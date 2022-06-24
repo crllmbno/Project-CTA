@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\veria\\Desktop\\Contact Tracing App\\CTA\\CTA\\CTA.csproj": {}
+    "C:\\Users\\veria\\Desktop\\Project-CTA-main\\CTA\\CTA\\CTA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\veria\\Desktop\\Contact Tracing App\\CTA\\CTA\\CTA.csproj": {
+    "C:\\Users\\veria\\Desktop\\Project-CTA-main\\CTA\\CTA\\CTA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\veria\\Desktop\\Contact Tracing App\\CTA\\CTA\\CTA.csproj",
+        "projectUniqueName": "C:\\Users\\veria\\Desktop\\Project-CTA-main\\CTA\\CTA\\CTA.csproj",
         "projectName": "CTA",
-        "projectPath": "C:\\Users\\veria\\Desktop\\Contact Tracing App\\CTA\\CTA\\CTA.csproj",
+        "projectPath": "C:\\Users\\veria\\Desktop\\Project-CTA-main\\CTA\\CTA\\CTA.csproj",
         "packagesPath": "C:\\Users\\veria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\veria\\Desktop\\Contact Tracing App\\CTA\\CTA\\obj\\",
+        "outputPath": "C:\\Users\\veria\\Desktop\\Project-CTA-main\\CTA\\CTA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
