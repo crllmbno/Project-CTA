@@ -10,7 +10,7 @@ namespace CTA
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            StreamWriter submit = File.AppendText(@"List.txt");
+            StreamWriter submit = File.AppendText(Application.StartupPath + "\\New List\\" + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text + ".txt");
             submit.WriteLine("Name: " + box1.Text + ", " + box2.Text + " " + box3.Text + ".");
             submit.WriteLine("Age: " + box4.Text);
             if (MaleButton.Checked == true)
@@ -25,6 +25,7 @@ namespace CTA
             submit.WriteLine("Cellphone#: " + box8.Text);
             submit.WriteLine("Telephone#: " + box9.Text);
             submit.WriteLine("Email: " + box10.Text);
+            submit.WriteLine("Date Recorded: " + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text);
             submit.WriteLine("");
             submit.WriteLine("");
             submit.WriteLine("");
@@ -37,9 +38,12 @@ namespace CTA
             box5.Clear();
             box6.Clear();
             box7.Clear();
-            box8.Clear();
+            box8.Text = "09";
             box9.Clear();
-            box10.Clear();
+            box10.Text = "@gmail.com";
+            MonthBox.Text = "Month";
+            DayBox.Text = "Day";
+            YearBox.Text = "Year";
             MaleButton.Checked = false;
             FemaleButton.Checked = false;
 

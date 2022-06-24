@@ -28,33 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(12, 9);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(89, 15);
-            this.lbl1.TabIndex = 0;
-            this.lbl1.Text = "List of Contacts";
             // 
             // ListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbl1);
+            this.BackgroundImage = global::CTA.Properties.Resources.bgimg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(749, 420);
+            this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MaximizeBox = false;
+            this.MdiChildrenMinimizedAnchorBottom = false;
+            this.MinimizeBox = false;
             this.Name = "ListForm";
-            this.Text = "Form2";
+            this.Text = "List of Contacts Traced";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Label lbl1;
     }
 }
