@@ -29,6 +29,21 @@ namespace CTA
             submit.WriteLine("");
             submit.WriteLine("");
             submit.WriteLine("");
+            LB.Items.Add("Name: " + box1.Text + ", " + box2.Text + " " + box3.Text + ".");
+            if (MaleButton.Checked == true)
+            {
+                LB.Items.Add("Sex: " + MaleButton.Text);
+            }
+            else if (FemaleButton.Checked == true)
+            {
+                LB.Items.Add("Sex: " + FemaleButton.Text);
+            }
+            LB.Items.Add("Address: " + box5.Text + ", " + box6.Text + ", " + box7.Text);
+            LB.Items.Add("Cellphone#: " + box8.Text);
+            LB.Items.Add("Telephone#: " + box9.Text);
+            LB.Items.Add("Email: " + box10.Text);
+            LB.Items.Add("Date Recorded: " + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text);
+
             submit.Close();
             MessageBox.Show("Form Submitted");
             box1.Clear();
@@ -46,6 +61,8 @@ namespace CTA
             YearBox.Text = "Year";
             MaleButton.Checked = false;
             FemaleButton.Checked = false;
+
+            
 
         }
 

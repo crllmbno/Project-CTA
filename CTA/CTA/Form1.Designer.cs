@@ -59,7 +59,7 @@
             this.MonthBox = new System.Windows.Forms.ComboBox();
             this.DayBox = new System.Windows.Forms.ComboBox();
             this.YearBox = new System.Windows.Forms.ComboBox();
-            this.ListBox = new System.Windows.Forms.RichTextBox();
+            this.LB = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // CTF
@@ -952,13 +952,14 @@
             this.YearBox.Text = "Year";
             this.YearBox.SelectedIndexChanged += new System.EventHandler(this.YearBox_SelectedIndexChanged);
             // 
-            // ListBox
+            // LB
             // 
-            this.ListBox.Location = new System.Drawing.Point(12, 352);
-            this.ListBox.Name = "ListBox";
-            this.ListBox.Size = new System.Drawing.Size(658, 320);
-            this.ListBox.TabIndex = 16;
-            this.ListBox.Text = "";
+            this.LB.FormattingEnabled = true;
+            this.LB.ItemHeight = 14;
+            this.LB.Location = new System.Drawing.Point(12, 342);
+            this.LB.Name = "LB";
+            this.LB.Size = new System.Drawing.Size(657, 326);
+            this.LB.TabIndex = 16;
             // 
             // CTA
             // 
@@ -967,7 +968,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 681);
-            this.Controls.Add(this.ListBox);
+            this.Controls.Add(this.LB);
             this.Controls.Add(this.YearBox);
             this.Controls.Add(this.DayBox);
             this.Controls.Add(this.MonthBox);
@@ -1042,6 +1043,6 @@
         private ComboBox MonthBox;
         private ComboBox DayBox;
         private ComboBox YearBox;
-        private RichTextBox ListBox;
+        private ListBox LB;
     }
 }

@@ -31,3 +31,14 @@ Date Recorded: January 1, 2000
 
 
 
+Name: Test, Test AB.
+Age: 16
+Sex: Male
+Address: qwer, qwer, qwer
+Cellphone#: 09123412342
+Telephone#: 123412
+Email: asdf1234@gmail.com
+Date Recorded: January 1, 2000
+
+
+
