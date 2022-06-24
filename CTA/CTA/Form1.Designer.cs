@@ -369,6 +369,7 @@
             this.txt12.Size = new System.Drawing.Size(46, 19);
             this.txt12.TabIndex = 14;
             this.txt12.Text = "Date";
+            this.txt12.Click += new System.EventHandler(this.txt12_Click);
             // 
             // MonthBox
             // 
@@ -389,9 +390,10 @@
             "December"});
             this.MonthBox.Location = new System.Drawing.Point(12, 268);
             this.MonthBox.Name = "MonthBox";
-            this.MonthBox.Size = new System.Drawing.Size(118, 22);
+            this.MonthBox.Size = new System.Drawing.Size(93, 22);
             this.MonthBox.TabIndex = 11;
             this.MonthBox.Text = "Month";
+            this.MonthBox.SelectedIndexChanged += new System.EventHandler(this.MonthBox_SelectedIndexChanged);
             // 
             // DayBox
             // 
@@ -429,11 +431,12 @@
             "29",
             "30",
             "31"});
-            this.DayBox.Location = new System.Drawing.Point(136, 268);
+            this.DayBox.Location = new System.Drawing.Point(111, 268);
             this.DayBox.Name = "DayBox";
-            this.DayBox.Size = new System.Drawing.Size(118, 22);
+            this.DayBox.Size = new System.Drawing.Size(46, 22);
             this.DayBox.TabIndex = 12;
             this.DayBox.Text = "Day";
+            this.DayBox.SelectedIndexChanged += new System.EventHandler(this.DayBox_SelectedIndexChanged);
             // 
             // YearBox
             // 
@@ -941,11 +944,12 @@
             "2498",
             "2499",
             "2500"});
-            this.YearBox.Location = new System.Drawing.Point(260, 268);
+            this.YearBox.Location = new System.Drawing.Point(163, 268);
             this.YearBox.Name = "YearBox";
-            this.YearBox.Size = new System.Drawing.Size(118, 22);
+            this.YearBox.Size = new System.Drawing.Size(55, 22);
             this.YearBox.TabIndex = 13;
             this.YearBox.Text = "Year";
+            this.YearBox.SelectedIndexChanged += new System.EventHandler(this.YearBox_SelectedIndexChanged);
             // 
             // CTA
             // 
@@ -990,6 +994,7 @@
             this.MinimizeBox = false;
             this.Name = "CTA";
             this.Text = "Contact Tracing App (CTA)";
+            this.Load += new System.EventHandler(this.CTA_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

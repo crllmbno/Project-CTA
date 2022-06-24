@@ -55,5 +55,30 @@ namespace CTA
             List.Show();
             this.Hide();
         }
+
+        private void CTA_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MonthBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DayBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void YearBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
