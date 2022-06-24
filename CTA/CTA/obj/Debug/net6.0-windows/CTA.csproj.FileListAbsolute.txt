@@ -34,3 +34,4 @@ C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\refint\
 C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.pdb
 C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.genruntimeconfig.cache
 C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\ref\CTA.dll
+C:\Users\veria\Desktop\Project-CTA-main\CTA\CTA\obj\Debug\net6.0-windows\CTA.ListForm.resources

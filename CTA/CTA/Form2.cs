@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CTA
 {
-    public partial class Form2 : Form
+    public partial class ListForm : Form
     {
-        public Form2()
+        public ListForm()
         {
             InitializeComponent();
         }

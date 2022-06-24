@@ -47,8 +47,9 @@ namespace CTA
 
         private void ListBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            ListForm form = new ListForm();
+            ListForm List = new ListForm();
+            List.Show();
+            this.Hide();
         }
     }
 }
