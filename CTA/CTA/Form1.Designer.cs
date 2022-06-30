@@ -61,6 +61,8 @@
             this.YearBox = new System.Windows.Forms.ComboBox();
             this.LB = new System.Windows.Forms.ListBox();
             this.Scan = new System.Windows.Forms.Button();
+            this.capture = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.capture)).BeginInit();
             this.SuspendLayout();
             // 
             // CTF
@@ -973,6 +975,15 @@
             this.Scan.TabIndex = 16;
             this.Scan.Text = "Scan";
             this.Scan.UseVisualStyleBackColor = false;
+            this.Scan.Click += new System.EventHandler(this.Scan_Click);
+            // 
+            // capture
+            // 
+            this.capture.Location = new System.Drawing.Point(12, 12);
+            this.capture.Name = "capture";
+            this.capture.Size = new System.Drawing.Size(656, 289);
+            this.capture.TabIndex = 17;
+            this.capture.TabStop = false;
             // 
             // CTA
             // 
@@ -981,6 +992,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 681);
+            this.Controls.Add(this.capture);
             this.Controls.Add(this.Scan);
             this.Controls.Add(this.LB);
             this.Controls.Add(this.YearBox);
@@ -1019,7 +1031,9 @@
             this.MinimizeBox = false;
             this.Name = "CTA";
             this.Text = "Contact Tracing App (CTA)";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CTA_FormClosing);
             this.Load += new System.EventHandler(this.CTA_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.capture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1059,5 +1073,6 @@
         private ComboBox YearBox;
         private ListBox LB;
         private Button Scan;
+        private PictureBox capture;
     }
 }

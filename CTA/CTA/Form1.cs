@@ -1,3 +1,7 @@
+using AForge.Video;
+using AForge.Video.DirectShow;
+
+
 namespace CTA
 {
     public partial class CTA : Form
@@ -7,9 +11,11 @@ namespace CTA
             InitializeComponent();
         }
 
+        VideoCaptureDevice captureDevice;
+
         private void CTA_Load(object sender, EventArgs e)
         {
-
+            capture.Hide();
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
@@ -99,5 +105,18 @@ namespace CTA
         {
 
         }
+
+        private void Scan_Click(object sender, EventArgs e)
+        {
+            capture.Show();
+            captureDevice = new VideoCaptureDevice();
+            captureDevice.Start();
+        }
+
+        private void CTA_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(captureDevice.IsRunning)
+                captureDevice.Stop();
+        }       
     }
 }
