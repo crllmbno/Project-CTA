@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTA));
             this.CTF = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.Label();
@@ -64,6 +65,7 @@
             this.capture = new System.Windows.Forms.PictureBox();
             this.camera = new System.Windows.Forms.ComboBox();
             this.lbl1 = new System.Windows.Forms.Label();
+            this.t1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.capture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1006,6 +1008,10 @@
             this.lbl1.TabIndex = 19;
             this.lbl1.Text = "Camera";
             // 
+            // t1
+            // 
+            this.t1.Tick += new System.EventHandler(this.t1_Tick);
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1099,5 +1105,6 @@
         private PictureBox capture;
         private ComboBox camera;
         private Label lbl1;
+        private System.Windows.Forms.Timer t1;
     }
 }

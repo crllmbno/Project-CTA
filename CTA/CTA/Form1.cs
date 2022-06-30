@@ -1,7 +1,6 @@
 using AForge.Video;
 using AForge.Video.DirectShow;
 
-
 namespace CTA
 {
     public partial class CTA : Form
@@ -134,6 +133,14 @@ namespace CTA
         {
             if(cam.IsRunning)
                 cam.Stop();
-        }       
+        }
+
+        private void t1_Tick(object sender, EventArgs e)
+        {
+            if (capture.Image != null)
+            {
+                
+            }
+        }
     }
 }
