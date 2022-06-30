@@ -62,6 +62,8 @@
             this.LB = new System.Windows.Forms.ListBox();
             this.Scan = new System.Windows.Forms.Button();
             this.capture = new System.Windows.Forms.PictureBox();
+            this.camera = new System.Windows.Forms.ComboBox();
+            this.lbl1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.capture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -986,6 +988,24 @@
             this.capture.TabIndex = 17;
             this.capture.TabStop = false;
             // 
+            // camera
+            // 
+            this.camera.FormattingEnabled = true;
+            this.camera.Location = new System.Drawing.Point(248, 312);
+            this.camera.Name = "camera";
+            this.camera.Size = new System.Drawing.Size(216, 22);
+            this.camera.TabIndex = 18;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
+            this.lbl1.Location = new System.Drawing.Point(195, 317);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(47, 14);
+            this.lbl1.TabIndex = 19;
+            this.lbl1.Text = "Camera";
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -993,6 +1013,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 681);
+            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.camera);
             this.Controls.Add(this.capture);
             this.Controls.Add(this.Scan);
             this.Controls.Add(this.LB);
@@ -1075,5 +1097,7 @@
         private ListBox LB;
         private Button Scan;
         private PictureBox capture;
+        private ComboBox camera;
+        private Label lbl1;
     }
 }
