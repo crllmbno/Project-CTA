@@ -29,7 +29,7 @@ namespace CTA
 
         private void CTA_Load(object sender, EventArgs e)
         {
-            capture.Hide();
+            
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
@@ -122,14 +122,13 @@ namespace CTA
 
         private void Scan_Click(object sender, EventArgs e)
         {
-            capture.Show();
+           
             Start_cam();
         }
 
         private void CTA_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(frame.IsRunning)
-                frame.Stop();
+            
         }       
     }
 }
