@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "CTA/1.0.0": {
         "dependencies": {
+          "AForge": "2.2.5",
+          "AForge.Video": "2.2.5",
           "AForge.Video.DirectShow": "2.2.5",
           "ZXing.Net": "0.16.8"
         },
