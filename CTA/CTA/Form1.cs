@@ -11,15 +11,15 @@ namespace CTA
             InitializeComponent();
         }
 
-        VideoCaptureDevice frame;
+        VideoCaptureDevice cam;
         FilterInfoCollection Devices;
 
         private void Start_cam()
         {
             Devices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            frame = new VideoCaptureDevice(Devices[0].MonikerString);
-            frame.NewFrame += new AForge.Video.NewFrameEventHandler(NewFrame_event);
-            frame.Start();
+            cam = new VideoCaptureDevice(Devices[0].MonikerString);
+            cam.NewFrame += new AForge.Video.NewFrameEventHandler(NewFrame_event);
+            cam.Start();
         }
 
         private void NewFrame_event(object send, NewFrameEventArgs e)
@@ -128,7 +128,9 @@ namespace CTA
 
         private void CTA_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            if (cam.IsRunning)
+                capture.Image = null;
+                cam.Stop();
         }       
     }
 }
