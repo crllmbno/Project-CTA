@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTA));
             this.CTF = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.Label();
@@ -63,7 +62,10 @@
             this.LB = new System.Windows.Forms.ListBox();
             this.Scan = new System.Windows.Forms.Button();
             this.capture = new System.Windows.Forms.PictureBox();
-            this.t1 = new System.Windows.Forms.Timer(this.components);
+            this.camerabox = new System.Windows.Forms.ComboBox();
+            this.cameralabel = new System.Windows.Forms.Label();
+            this.test = new System.Windows.Forms.TextBox();
+            this.pic = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.capture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -343,7 +345,7 @@
             this.SubmitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubmitButton.Location = new System.Drawing.Point(515, 312);
+            this.SubmitButton.Location = new System.Drawing.Point(436, 312);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(73, 24);
             this.SubmitButton.TabIndex = 15;
@@ -971,7 +973,7 @@
             this.Scan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Scan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Scan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Scan.Location = new System.Drawing.Point(596, 312);
+            this.Scan.Location = new System.Drawing.Point(517, 312);
             this.Scan.Name = "Scan";
             this.Scan.Size = new System.Drawing.Size(73, 24);
             this.Scan.TabIndex = 16;
@@ -988,9 +990,43 @@
             this.capture.TabIndex = 17;
             this.capture.TabStop = false;
             // 
-            // t1
+            // camerabox
             // 
-            this.t1.Tick += new System.EventHandler(this.t1_Tick);
+            this.camerabox.FormattingEnabled = true;
+            this.camerabox.Location = new System.Drawing.Point(218, 314);
+            this.camerabox.Name = "camerabox";
+            this.camerabox.Size = new System.Drawing.Size(212, 22);
+            this.camerabox.TabIndex = 18;
+            // 
+            // cameralabel
+            // 
+            this.cameralabel.AutoSize = true;
+            this.cameralabel.BackColor = System.Drawing.Color.Transparent;
+            this.cameralabel.Location = new System.Drawing.Point(156, 317);
+            this.cameralabel.Name = "cameralabel";
+            this.cameralabel.Size = new System.Drawing.Size(56, 14);
+            this.cameralabel.TabIndex = 19;
+            this.cameralabel.Text = "WebCam";
+            // 
+            // test
+            // 
+            this.test.Location = new System.Drawing.Point(176, 419);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(100, 22);
+            this.test.TabIndex = 20;
+            // 
+            // pic
+            // 
+            this.pic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.pic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pic.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pic.Location = new System.Drawing.Point(596, 312);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(73, 24);
+            this.pic.TabIndex = 21;
+            this.pic.Text = "Capture";
+            this.pic.UseVisualStyleBackColor = false;
+            this.pic.Click += new System.EventHandler(this.pic_Click);
             // 
             // CTA
             // 
@@ -999,6 +1035,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 681);
+            this.Controls.Add(this.pic);
+            this.Controls.Add(this.test);
+            this.Controls.Add(this.cameralabel);
+            this.Controls.Add(this.camerabox);
             this.Controls.Add(this.capture);
             this.Controls.Add(this.Scan);
             this.Controls.Add(this.LB);
@@ -1081,6 +1121,9 @@
         private ListBox LB;
         private Button Scan;
         private PictureBox capture;
-        private System.Windows.Forms.Timer t1;
+        private ComboBox camerabox;
+        private Label cameralabel;
+        private TextBox test;
+        private Button pic;
     }
 }

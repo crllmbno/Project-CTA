@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pqfGdzCZDvkj0vkv73GIdTS/wOgMSogdS5WoKpyV7se+f3HRxFA4b1HM2JBQdQXAGgheJAGEln6UkxElh9rT/Q==",
+  "dgSpecHash": "nb2+r8hAw9Bt9hBBp3JbULZndamIX2oV6ALxsyqzg9ktNXDKASKsiUxV1tzxfz70ho0hllZC5+CLFhfywmFNLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\veria\\Desktop\\CTA\\CTA\\CTA\\CTA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\veria\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\veria\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\veria\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\veria\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
+    "C:\\Users\\veria\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512"
   ],
   "logs": [
     {

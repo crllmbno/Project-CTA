@@ -1,6 +1,6 @@
-using AForge;
 using AForge.Video;
 using AForge.Video.DirectShow;
+
 
 namespace CTA
 {
@@ -17,6 +17,10 @@ namespace CTA
         private void CTA_Load(object sender, EventArgs e)
         {
            capture.Hide();
+            camera = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterinfo in camera)
+                camerabox.Items.Add(filterinfo.Name);
+            camerabox.SelectedIndex = 0;
             
         }
 
@@ -111,28 +115,25 @@ namespace CTA
         private void Scan_Click(object sender, EventArgs e)
         {
             capture.Show();
-            camera = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            cam = new VideoCaptureDevice(camera[0].MonikerString);
-            cam.NewFrame += new AForge.Video.NewFrameEventHandler(NewFrame_event);
+            cam = new VideoCaptureDevice(camera[camerabox.SelectedIndex].MonikerString);
+            cam.NewFrame += Camera_NewFrame;
             cam.Start();
             
         }
 
-        private void NewFrame_event(object send, NewFrameEventArgs e)
+        private void Camera_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            try
-            {
-                capture.Image = (Image)e.Frame.Clone();
-            }catch (Exception ex) { }
+           
+
         }
 
         private void CTA_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(cam.IsRunning)
-                cam.Stop();
+           
         }
 
-        private void t1_Tick(object sender, EventArgs e)
+
+        private void pic_Click(object sender, EventArgs e)
         {
             
         }
