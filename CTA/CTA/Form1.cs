@@ -11,7 +11,21 @@ namespace CTA
             InitializeComponent();
         }
 
-        VideoCaptureDevice captureDevice;
+        VideoCaptureDevice frame;
+        FilterInfoCollection Devices;
+
+        private void Start_cam()
+        {
+            Devices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            frame = new VideoCaptureDevice(Devices[0].MonikerString);
+            frame.NewFrame += new AForge.Video.NewFrameEventHandler(NewFrame_event);
+            frame.Start();
+        }
+
+        private void NewFrame_event(object send, NewFrameEventArgs e)
+        {
+            try { capture.Image = (Image)e.Frame.Clone(); } catch (Exception ex) { }
+        }
 
         private void CTA_Load(object sender, EventArgs e)
         {
@@ -109,14 +123,13 @@ namespace CTA
         private void Scan_Click(object sender, EventArgs e)
         {
             capture.Show();
-            captureDevice = new VideoCaptureDevice();
-            captureDevice.Start();
+            Start_cam();
         }
 
         private void CTA_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(captureDevice.IsRunning)
-                captureDevice.Stop();
+            if(frame.IsRunning)
+                frame.Stop();
         }       
     }
 }
