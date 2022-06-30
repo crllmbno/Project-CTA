@@ -60,6 +60,7 @@
             this.DayBox = new System.Windows.Forms.ComboBox();
             this.YearBox = new System.Windows.Forms.ComboBox();
             this.LB = new System.Windows.Forms.ListBox();
+            this.Scan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CTF
@@ -338,7 +339,7 @@
             this.SubmitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubmitButton.Location = new System.Drawing.Point(596, 312);
+            this.SubmitButton.Location = new System.Drawing.Point(515, 312);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(73, 24);
             this.SubmitButton.TabIndex = 15;
@@ -959,7 +960,19 @@
             this.LB.Location = new System.Drawing.Point(12, 342);
             this.LB.Name = "LB";
             this.LB.Size = new System.Drawing.Size(657, 326);
-            this.LB.TabIndex = 16;
+            this.LB.TabIndex = 0;
+            // 
+            // Scan
+            // 
+            this.Scan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Scan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Scan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Scan.Location = new System.Drawing.Point(596, 312);
+            this.Scan.Name = "Scan";
+            this.Scan.Size = new System.Drawing.Size(73, 24);
+            this.Scan.TabIndex = 16;
+            this.Scan.Text = "Scan";
+            this.Scan.UseVisualStyleBackColor = false;
             // 
             // CTA
             // 
@@ -968,6 +981,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 681);
+            this.Controls.Add(this.Scan);
             this.Controls.Add(this.LB);
             this.Controls.Add(this.YearBox);
             this.Controls.Add(this.DayBox);
@@ -1044,5 +1058,6 @@
         private ComboBox DayBox;
         private ComboBox YearBox;
         private ListBox LB;
+        private Button Scan;
     }
 }

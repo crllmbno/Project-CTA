@@ -7,6 +7,10 @@ namespace CTA
             InitializeComponent();
         }
 
+        private void CTA_Load(object sender, EventArgs e)
+        {
+
+        }
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
@@ -74,11 +78,6 @@ namespace CTA
             ListForm List = new ListForm();
             List.Show();
             this.Hide();
-        }
-
-        private void CTA_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void MonthBox_SelectedIndexChanged(object sender, EventArgs e)
