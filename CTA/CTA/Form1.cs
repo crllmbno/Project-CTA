@@ -110,7 +110,7 @@ namespace CTA
 
         private void CTA_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            //blank
         }
 
         private void t1_Tick(object sender, EventArgs e)
