@@ -105,7 +105,7 @@ namespace CTA
 
         private void CTA_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //blank
+            cam.Stop();
         }
 
         private void CTA_FormClosing(object sender, FormClosingEventArgs e)
@@ -128,6 +128,13 @@ namespace CTA
                         cam.Stop();
                 }    
             }
+        }
+
+        private void SrchBtn_Click(object sender, EventArgs e)
+        {
+            SearchForm searchForm = new SearchForm();
+            searchForm.Show();
+            this.Hide();
         }
     }
 }

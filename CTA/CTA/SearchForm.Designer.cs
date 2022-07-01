@@ -650,6 +650,7 @@
             this.Search.TabIndex = 4;
             this.Search.Text = "Search";
             this.Search.UseVisualStyleBackColor = false;
+            this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
             // ext
             // 
@@ -662,6 +663,7 @@
             this.ext.TabIndex = 5;
             this.ext.Text = "Exit";
             this.ext.UseVisualStyleBackColor = false;
+            this.ext.Click += new System.EventHandler(this.ext_Click);
             // 
             // SearchWindow
             // 

@@ -20,3 +20,4 @@ C:\Users\veria\Desktop\NewCTA\CTA\CTA\bin\Debug\AForge.Video.DirectShow.xml
 C:\Users\veria\Desktop\NewCTA\CTA\CTA\bin\Debug\zxing.xml
 C:\Users\veria\Desktop\NewCTA\CTA\CTA\bin\Debug\zxing.presentation.xml
 C:\Users\veria\Desktop\NewCTA\CTA\CTA\obj\Debug\CTA.csproj.CopyComplete
+C:\Users\veria\Desktop\NewCTA\CTA\CTA\obj\Debug\CTA.SearchForm.resources

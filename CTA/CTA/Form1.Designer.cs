@@ -949,6 +949,7 @@
             this.SrchBtn.TabIndex = 14;
             this.SrchBtn.Text = "Search Date";
             this.SrchBtn.UseVisualStyleBackColor = false;
+            this.SrchBtn.Click += new System.EventHandler(this.SrchBtn_Click);
             // 
             // SubmitButton
             // 
@@ -1052,7 +1053,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CTA";
-            this.ShowIcon = false;
             this.Text = "Contact Tracing App (CTA)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CTA_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CTA_FormClosed);
