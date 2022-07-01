@@ -105,7 +105,7 @@ namespace CTA
 
         private void CTA_FormClosed(object sender, FormClosedEventArgs e)
         {
-            cam.Stop();
+            //blank
         }
 
         private void CTA_FormClosing(object sender, FormClosingEventArgs e)
@@ -122,7 +122,7 @@ namespace CTA
                 Result result = reader.Decode((Bitmap)capture.Image);
                 if (result != null)
                 {
-                    test.Text = result.ToString();
+                    LB.Items.Add(result.ToString());
                     t1.Stop();
                     if (cam.IsRunning)
                         cam.Stop();
@@ -135,6 +135,11 @@ namespace CTA
             SearchForm searchForm = new SearchForm();
             searchForm.Show();
             this.Hide();
+        }
+
+        private void stopcam_Click(object sender, EventArgs e)
+        {
+            cam.Stop();
         }
     }
 }

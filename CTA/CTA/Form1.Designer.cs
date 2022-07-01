@@ -64,6 +64,7 @@
             this.capture = new System.Windows.Forms.PictureBox();
             this.test = new System.Windows.Forms.TextBox();
             this.t1 = new System.Windows.Forms.Timer(this.components);
+            this.stopcam = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.capture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -956,7 +957,7 @@
             this.SubmitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubmitButton.Location = new System.Drawing.Point(515, 312);
+            this.SubmitButton.Location = new System.Drawing.Point(436, 312);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(73, 24);
             this.SubmitButton.TabIndex = 15;
@@ -969,7 +970,7 @@
             this.Scan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Scan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Scan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Scan.Location = new System.Drawing.Point(596, 312);
+            this.Scan.Location = new System.Drawing.Point(517, 312);
             this.Scan.Name = "Scan";
             this.Scan.Size = new System.Drawing.Size(73, 24);
             this.Scan.TabIndex = 16;
@@ -1007,6 +1008,19 @@
             this.t1.Interval = 1000;
             this.t1.Tick += new System.EventHandler(this.t1_Tick);
             // 
+            // stopcam
+            // 
+            this.stopcam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.stopcam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stopcam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.stopcam.Location = new System.Drawing.Point(596, 312);
+            this.stopcam.Name = "stopcam";
+            this.stopcam.Size = new System.Drawing.Size(73, 24);
+            this.stopcam.TabIndex = 20;
+            this.stopcam.Text = "StopCam";
+            this.stopcam.UseVisualStyleBackColor = false;
+            this.stopcam.Click += new System.EventHandler(this.stopcam_Click);
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1014,6 +1028,7 @@
             this.BackgroundImage = global::CTA.Properties.Resources.bgimg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 681);
+            this.Controls.Add(this.stopcam);
             this.Controls.Add(this.test);
             this.Controls.Add(this.capture);
             this.Controls.Add(this.LB);
@@ -1100,6 +1115,7 @@
         private System.Windows.Forms.PictureBox capture;
         private System.Windows.Forms.TextBox test;
         private System.Windows.Forms.Timer t1;
+        private System.Windows.Forms.Button stopcam;
     }
 }
 
