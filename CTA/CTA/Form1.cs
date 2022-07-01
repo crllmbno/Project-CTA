@@ -95,6 +95,7 @@ namespace CTA
             cam = new VideoCaptureDevice(camera[0].MonikerString);
             cam.NewFrame += new AForge.Video.NewFrameEventHandler(Camera_NewFrame);
             cam.Start();
+            t1.Start();
         }
 
         private void Camera_NewFrame(object sender, NewFrameEventArgs e)
@@ -115,7 +116,18 @@ namespace CTA
 
         private void t1_Tick(object sender, EventArgs e)
         {
-
+            if (capture.Image != null)
+            {
+                BarcodeReader reader = new BarcodeReader();
+                Result result = reader.Decode((Bitmap)capture.Image);
+                if (result != null)
+                {
+                    test.Text = result.ToString();
+                    t1.Stop();
+                    if (cam.IsRunning)
+                        cam.Stop();
+                }    
+            }
         }
     }
 }
