@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.CTF = new System.Windows.Forms.Label();
             this.tb1 = new System.Windows.Forms.TextBox();
             this.tb2 = new System.Windows.Forms.TextBox();
@@ -61,9 +62,8 @@
             this.Scan = new System.Windows.Forms.Button();
             this.LB = new System.Windows.Forms.ListBox();
             this.capture = new System.Windows.Forms.PictureBox();
-            this.txt13 = new System.Windows.Forms.Label();
-            this.camerabox = new System.Windows.Forms.ComboBox();
-            this.read = new System.Windows.Forms.Button();
+            this.test = new System.Windows.Forms.TextBox();
+            this.t1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.capture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -955,7 +955,7 @@
             this.SubmitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubmitButton.Location = new System.Drawing.Point(436, 312);
+            this.SubmitButton.Location = new System.Drawing.Point(515, 312);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(73, 24);
             this.SubmitButton.TabIndex = 15;
@@ -968,7 +968,7 @@
             this.Scan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Scan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Scan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Scan.Location = new System.Drawing.Point(517, 312);
+            this.Scan.Location = new System.Drawing.Point(596, 312);
             this.Scan.Name = "Scan";
             this.Scan.Size = new System.Drawing.Size(73, 24);
             this.Scan.TabIndex = 16;
@@ -994,37 +994,17 @@
             this.capture.TabIndex = 18;
             this.capture.TabStop = false;
             // 
-            // txt13
+            // test
             // 
-            this.txt13.AutoSize = true;
-            this.txt13.BackColor = System.Drawing.Color.Transparent;
-            this.txt13.Location = new System.Drawing.Point(156, 317);
-            this.txt13.Name = "txt13";
-            this.txt13.Size = new System.Drawing.Size(56, 14);
-            this.txt13.TabIndex = 0;
-            this.txt13.Text = "WebCam";
+            this.test.Location = new System.Drawing.Point(233, 312);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(100, 22);
+            this.test.TabIndex = 19;
             // 
-            // camerabox
+            // t1
             // 
-            this.camerabox.DropDownWidth = 212;
-            this.camerabox.FormattingEnabled = true;
-            this.camerabox.Location = new System.Drawing.Point(218, 314);
-            this.camerabox.Name = "camerabox";
-            this.camerabox.Size = new System.Drawing.Size(212, 22);
-            this.camerabox.TabIndex = 18;
-            // 
-            // read
-            // 
-            this.read.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.read.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.read.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.read.Location = new System.Drawing.Point(596, 312);
-            this.read.Name = "read";
-            this.read.Size = new System.Drawing.Size(73, 24);
-            this.read.TabIndex = 17;
-            this.read.Text = "Read";
-            this.read.UseVisualStyleBackColor = false;
-            this.read.Click += new System.EventHandler(this.read_Click);
+            this.t1.Interval = 1000;
+            this.t1.Tick += new System.EventHandler(this.t1_Tick);
             // 
             // CTA
             // 
@@ -1033,9 +1013,7 @@
             this.BackgroundImage = global::CTA.Properties.Resources.bgimg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 681);
-            this.Controls.Add(this.read);
-            this.Controls.Add(this.camerabox);
-            this.Controls.Add(this.txt13);
+            this.Controls.Add(this.test);
             this.Controls.Add(this.capture);
             this.Controls.Add(this.LB);
             this.Controls.Add(this.Scan);
@@ -1076,6 +1054,7 @@
             this.Name = "CTA";
             this.ShowIcon = false;
             this.Text = "Contact Tracing App (CTA)";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CTA_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CTA_FormClosed);
             this.Load += new System.EventHandler(this.CTA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.capture)).EndInit();
@@ -1119,9 +1098,8 @@
         private System.Windows.Forms.Button Scan;
         private System.Windows.Forms.ListBox LB;
         private System.Windows.Forms.PictureBox capture;
-        private System.Windows.Forms.Label txt13;
-        private System.Windows.Forms.ComboBox camerabox;
-        private System.Windows.Forms.Button read;
+        private System.Windows.Forms.TextBox test;
+        private System.Windows.Forms.Timer t1;
     }
 }
 

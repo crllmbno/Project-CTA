@@ -99,21 +99,22 @@ namespace CTA
 
         private void Camera_NewFrame(object sender, NewFrameEventArgs e)
         {
-            try
-            {
-                capture.Image = (Image)e.Frame.Clone();
-            }
-            catch (Exception ex) { }
+            capture.Image = (Bitmap)e.Frame.Clone();
         }
 
         private void CTA_FormClosed(object sender, FormClosedEventArgs e)
         {
-            cam.Stop();
+            //blank
         }
 
-        private void read_Click(object sender, EventArgs e)
+        private void CTA_FormClosing(object sender, FormClosingEventArgs e)
         {
-            BarcodeReader reader = new BarcodeReader();
+            if (cam.IsRunning)
+                cam.Stop();
+        }
+
+        private void t1_Tick(object sender, EventArgs e)
+        {
 
         }
     }
