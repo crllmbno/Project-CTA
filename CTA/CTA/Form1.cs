@@ -1,6 +1,12 @@
-using AForge.Video;
-using AForge.Video.DirectShow;
-
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CTA
 {
@@ -11,131 +17,9 @@ namespace CTA
             InitializeComponent();
         }
 
-        VideoCaptureDevice cam;
-        FilterInfoCollection camera;
-
         private void CTA_Load(object sender, EventArgs e)
         {
-           capture.Hide();
-            camera = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo filterinfo in camera)
-                camerabox.Items.Add(filterinfo.Name);
-            camerabox.SelectedIndex = 0;
-            
-        }
 
-        private void SubmitButton_Click(object sender, EventArgs e)
-        {
-            StreamWriter submit = File.AppendText(Application.StartupPath + "\\New List\\" + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text + ".txt");
-            submit.WriteLine("Name: " + box1.Text + ", " + box2.Text + " " + box3.Text + ".");
-            submit.WriteLine("Age: " + box4.Text);
-            if (MaleButton.Checked == true)
-            {
-                submit.WriteLine("Sex: " + MaleButton.Text);
-            }
-            else if (FemaleButton.Checked == true)
-            {
-                submit.WriteLine("Sex: " + FemaleButton.Text);
-            }
-            submit.WriteLine("Address: " + box5.Text + ", " + box6.Text + ", " + box7.Text);
-            submit.WriteLine("Cellphone#: " + box8.Text);
-            submit.WriteLine("Telephone#: " + box9.Text);
-            submit.WriteLine("Email: " + box10.Text);
-            submit.WriteLine("Date Recorded: " + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text);
-            submit.WriteLine("");
-            submit.WriteLine("");
-            submit.WriteLine("");
-            LB.Items.Add("Name: " + box1.Text + ", " + box2.Text + " " + box3.Text + ".");
-            if (MaleButton.Checked == true)
-            {
-                LB.Items.Add("Sex: " + MaleButton.Text);
-            }
-            else if (FemaleButton.Checked == true)
-            {
-                LB.Items.Add("Sex: " + FemaleButton.Text);
-            }
-            LB.Items.Add("Address: " + box5.Text + ", " + box6.Text + ", " + box7.Text);
-            LB.Items.Add("Cellphone#: " + box8.Text);
-            LB.Items.Add("Telephone#: " + box9.Text);
-            LB.Items.Add("Email: " + box10.Text);
-            LB.Items.Add("Date Recorded: " + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text);
-            LB.Items.Add(" ");
-            LB.Items.Add(" ");
-            LB.Items.Add(" ");
-
-            submit.Close();
-            MessageBox.Show("Form Submitted");
-            box1.Clear();
-            box2.Clear();
-            box3.Clear();
-            box4.Clear();
-            box5.Clear();
-            box6.Clear();
-            box7.Clear();
-            box8.Text = "09";
-            box9.Clear();
-            box10.Text = "@gmail.com";
-            MonthBox.Text = "Month";
-            DayBox.Text = "Day";
-            YearBox.Text = "Year";
-            MaleButton.Checked = false;
-            FemaleButton.Checked = false;
-
-            
-
-        }
-
-        private void ListBtn_Click(object sender, EventArgs e)
-        {
-            ListForm List = new ListForm();
-            List.Show();
-            this.Hide();
-        }
-
-        private void MonthBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DayBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void YearBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Scan_Click(object sender, EventArgs e)
-        {
-            capture.Show();
-            cam = new VideoCaptureDevice(camera[camerabox.SelectedIndex].MonikerString);
-            cam.NewFrame += Camera_NewFrame;
-            cam.Start();
-            
-        }
-
-        private void Camera_NewFrame(object sender, NewFrameEventArgs eventArgs)
-        {
-           
-
-        }
-
-        private void CTA_FormClosing(object sender, FormClosingEventArgs e)
-        {
-           
-        }
-
-
-        private void pic_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

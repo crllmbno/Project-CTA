@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTA", "CTA\CTA.csproj", "{3B7D4280-07D6-4EC8-8D01-6E58B896AD01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTA", "CTA\CTA.csproj", "{A3A57EDB-40D2-4A37-9591-71D91870F284}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3B7D4280-07D6-4EC8-8D01-6E58B896AD01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B7D4280-07D6-4EC8-8D01-6E58B896AD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B7D4280-07D6-4EC8-8D01-6E58B896AD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B7D4280-07D6-4EC8-8D01-6E58B896AD01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A57EDB-40D2-4A37-9591-71D91870F284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A57EDB-40D2-4A37-9591-71D91870F284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A57EDB-40D2-4A37-9591-71D91870F284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A57EDB-40D2-4A37-9591-71D91870F284}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {042E1BE1-8BC6-4FED-8731-DA083DD92649}
+		SolutionGuid = {C991F7C4-FDAA-4C3E-906D-625F689CA208}
 	EndGlobalSection
 EndGlobal
