@@ -63,7 +63,10 @@
             this.LB = new System.Windows.Forms.ListBox();
             this.capture = new System.Windows.Forms.PictureBox();
             this.t1 = new System.Windows.Forms.Timer(this.components);
+            this.qrbtn = new System.Windows.Forms.Button();
+            this.qrbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.capture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qrbox)).BeginInit();
             this.SuspendLayout();
             // 
             // CTF
@@ -955,7 +958,7 @@
             this.SubmitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubmitButton.Location = new System.Drawing.Point(515, 312);
+            this.SubmitButton.Location = new System.Drawing.Point(517, 312);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(73, 24);
             this.SubmitButton.TabIndex = 15;
@@ -982,14 +985,14 @@
             this.LB.ItemHeight = 14;
             this.LB.Location = new System.Drawing.Point(12, 342);
             this.LB.Name = "LB";
-            this.LB.Size = new System.Drawing.Size(657, 326);
+            this.LB.Size = new System.Drawing.Size(321, 326);
             this.LB.TabIndex = 0;
             // 
             // capture
             // 
-            this.capture.Location = new System.Drawing.Point(12, 9);
+            this.capture.Location = new System.Drawing.Point(339, 342);
             this.capture.Name = "capture";
-            this.capture.Size = new System.Drawing.Size(656, 289);
+            this.capture.Size = new System.Drawing.Size(333, 327);
             this.capture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.capture.TabIndex = 18;
             this.capture.TabStop = false;
@@ -999,6 +1002,29 @@
             this.t1.Interval = 1000;
             this.t1.Tick += new System.EventHandler(this.t1_Tick);
             // 
+            // qrbtn
+            // 
+            this.qrbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.qrbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.qrbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.qrbtn.Location = new System.Drawing.Point(120, 312);
+            this.qrbtn.Name = "qrbtn";
+            this.qrbtn.Size = new System.Drawing.Size(73, 24);
+            this.qrbtn.TabIndex = 19;
+            this.qrbtn.Text = "Get QR";
+            this.qrbtn.UseVisualStyleBackColor = false;
+            this.qrbtn.Click += new System.EventHandler(this.qrbtn_Click);
+            // 
+            // qrbox
+            // 
+            this.qrbox.BackColor = System.Drawing.Color.White;
+            this.qrbox.Location = new System.Drawing.Point(12, 342);
+            this.qrbox.Name = "qrbox";
+            this.qrbox.Size = new System.Drawing.Size(321, 326);
+            this.qrbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.qrbox.TabIndex = 20;
+            this.qrbox.TabStop = false;
+            // 
             // CTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1006,6 +1032,8 @@
             this.BackgroundImage = global::CTA.Properties.Resources.bgimg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 681);
+            this.Controls.Add(this.qrbox);
+            this.Controls.Add(this.qrbtn);
             this.Controls.Add(this.capture);
             this.Controls.Add(this.LB);
             this.Controls.Add(this.Scan);
@@ -1049,6 +1077,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CTA_FormClosed);
             this.Load += new System.EventHandler(this.CTA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.capture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qrbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1090,6 +1119,8 @@
         private System.Windows.Forms.ListBox LB;
         private System.Windows.Forms.PictureBox capture;
         private System.Windows.Forms.Timer t1;
+        private System.Windows.Forms.Button qrbtn;
+        private System.Windows.Forms.PictureBox qrbox;
     }
 }
 

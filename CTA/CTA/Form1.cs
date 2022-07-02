@@ -12,6 +12,7 @@ using AForge;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using QRCoder;
 
 namespace CTA
 {
@@ -27,6 +28,7 @@ namespace CTA
 
         private void CTA_Load(object sender, EventArgs e)
         {
+            qrbox.Hide();
             capture.Hide();
             camera = new FilterInfoCollection(FilterCategory.VideoInputDevice);
         }
@@ -134,6 +136,15 @@ namespace CTA
             SearchForm searchForm = new SearchForm();
             searchForm.Show();
             this.Hide();
+        }
+
+        private void qrbtn_Click(object sender, EventArgs e)
+        {
+            qrbox.Show();
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(LB.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode code = new QRCode(data);
+            qrbox.Image = code.GetGraphic(5);
         }
     }
 }
