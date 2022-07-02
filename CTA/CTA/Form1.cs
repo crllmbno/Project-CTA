@@ -28,6 +28,8 @@ namespace CTA
 
         private void CTA_Load(object sender, EventArgs e)
         {
+            fill.Hide();
+            test.Hide();
             qrbox.Hide();
             capture.Hide();
             camera = new FilterInfoCollection(FilterCategory.VideoInputDevice);
@@ -54,6 +56,7 @@ namespace CTA
             submit.WriteLine("");
             submit.WriteLine("");
             submit.WriteLine("");
+
             LB.Items.Add("Name: " + tb1.Text + ", " + tb2.Text + " " + tb3.Text + ".");
             if (MaleButton.Checked == true)
             {
@@ -68,11 +71,13 @@ namespace CTA
             LB.Items.Add("Telephone#: " + tb9.Text);
             LB.Items.Add("Email: " + tb10.Text);
             LB.Items.Add("Date Recorded: " + MonthBox.Text + " " + DayBox.Text + ", " + YearBox.Text);
-            LB.Items.Add(" ");
-            LB.Items.Add(" ");
-            LB.Items.Add(" ");
+            LB.Items.Add("");
+            LB.Items.Add("");
+            LB.Items.Add("");
 
             submit.Close();
+
+
             MessageBox.Show("Form Submitted");
             tb1.Clear();
             tb2.Clear();
@@ -91,13 +96,15 @@ namespace CTA
             FemaleButton.Checked = false;
         }
 
+
         private void Scan_Click(object sender, EventArgs e)
         {
-            capture.Show();
-            cam = new VideoCaptureDevice(camera[0].MonikerString);
-            cam.NewFrame += new AForge.Video.NewFrameEventHandler(Camera_NewFrame);
-            cam.Start();
-            t1.Start();
+                fill.Show();
+                capture.Show();
+                cam = new VideoCaptureDevice(camera[0].MonikerString);
+                cam.NewFrame += new AForge.Video.NewFrameEventHandler(Camera_NewFrame);
+                cam.Start();
+                t1.Start();
         }
 
         private void Camera_NewFrame(object sender, NewFrameEventArgs e)
@@ -123,12 +130,14 @@ namespace CTA
                 Result result = reader.Decode((Bitmap)capture.Image);
                 if (result != null)
                 {
-                    LB.Items.Add(result.ToString());
+                    test.Text = result.ToString();
                     t1.Stop();
                     if (cam.IsRunning)
                         cam.Stop();
                 }    
+                
             }
+            
         }
 
         private void SrchBtn_Click(object sender, EventArgs e)
@@ -141,10 +150,47 @@ namespace CTA
         private void qrbtn_Click(object sender, EventArgs e)
         {
             qrbox.Show();
+            string con = tb1.Text + "\r\n" + 
+                tb2.Text + "\r\n" + 
+                tb3.Text + "\r\n" + 
+                tb4.Text + "\r\n" + 
+                tb5.Text + "\r\n" + 
+                tb6.Text + "\r\n" + 
+                tb7.Text + "\r\n" + 
+                tb8.Text + "\r\n" + 
+                tb9.Text + "\r\n" + 
+                tb10.Text;
             QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(LB.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCodeData data = qr.CreateQrCode(con, QRCodeGenerator.ECCLevel.L);
             QRCode code = new QRCode(data);
-            qrbox.Image = code.GetGraphic(5);
+            qrbox.Image = code.GetGraphic(7);
+
+            tb1.Clear();
+            tb2.Clear();
+            tb3.Clear();
+            tb4.Clear();
+            tb5.Clear();
+            tb6.Clear();
+            tb7.Clear();
+            tb8.Text = "09";
+            tb9.Clear();
+            tb10.Text = "@gmail.com";
+        }
+
+        private void fill_Click(object sender, EventArgs e)
+        {
+            string[] line = test.Lines;
+            tb1.Text = line[0];
+            tb2.Text = line[1];
+            tb3.Text = line[2];
+            tb4.Text = line[3];
+            tb5.Text = line[4];
+            tb6.Text = line[5];
+            tb7.Text = line[6];
+            tb8.Text = line[7];
+            tb9.Text = line[8];
+            tb10.Text = line[9];
+            test.Lines = line;
         }
     }
 }

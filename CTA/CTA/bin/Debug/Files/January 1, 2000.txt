@@ -53,3 +53,25 @@ Date Recorded: January 1, 2000
 
 
 
+Name: testingrb, testingrb rb.
+Age: rb
+Sex: Male
+Address: testingrb, testingrb, testingrb
+Cellphone#: 09123132132
+Telephone#: 132132
+Email: testingrb@gmail.com
+Date Recorded: January 1, 2000
+
+
+
+Name: Lambino, Carl Andrei D.
+Age: 19
+Sex: Male
+Address: Munting Batangas, Balanga, Bataan
+Cellphone#: 09123465789
+Telephone#: 132456
+Email: veriasdan@gmail.com
+Date Recorded: January 1, 2000
+
+
+

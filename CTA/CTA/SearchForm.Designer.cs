@@ -661,7 +661,7 @@
             this.ext.Name = "ext";
             this.ext.Size = new System.Drawing.Size(75, 23);
             this.ext.TabIndex = 5;
-            this.ext.Text = "Exit";
+            this.ext.Text = "Back";
             this.ext.UseVisualStyleBackColor = false;
             this.ext.Click += new System.EventHandler(this.ext_Click);
             // 
@@ -672,6 +672,7 @@
             this.SearchWindow.Size = new System.Drawing.Size(311, 260);
             this.SearchWindow.TabIndex = 0;
             this.SearchWindow.Text = "";
+            this.SearchWindow.TextChanged += new System.EventHandler(this.SearchWindow_TextChanged);
             // 
             // SearchForm
             // 

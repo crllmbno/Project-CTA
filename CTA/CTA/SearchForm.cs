@@ -27,7 +27,14 @@ namespace CTA
 
         private void ext_Click(object sender, EventArgs e)
         {
-            this.Close();
+            CTA cTA = new CTA();
+            cTA.Show();
+            this.Hide();
+        }
+
+        private void SearchWindow_TextChanged(object sender, EventArgs e)
+        {
+            //blank
         }
     }
 }

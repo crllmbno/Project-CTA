@@ -65,6 +65,8 @@
             this.t1 = new System.Windows.Forms.Timer(this.components);
             this.qrbtn = new System.Windows.Forms.Button();
             this.qrbox = new System.Windows.Forms.PictureBox();
+            this.test = new System.Windows.Forms.RichTextBox();
+            this.fill = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.capture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qrbox)).BeginInit();
             this.SuspendLayout();
@@ -1018,12 +1020,34 @@
             // qrbox
             // 
             this.qrbox.BackColor = System.Drawing.Color.White;
-            this.qrbox.Location = new System.Drawing.Point(12, 342);
+            this.qrbox.Location = new System.Drawing.Point(703, 22);
             this.qrbox.Name = "qrbox";
-            this.qrbox.Size = new System.Drawing.Size(321, 326);
+            this.qrbox.Size = new System.Drawing.Size(769, 646);
             this.qrbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.qrbox.TabIndex = 20;
             this.qrbox.TabStop = false;
+            // 
+            // test
+            // 
+            this.test.BackColor = System.Drawing.Color.White;
+            this.test.Location = new System.Drawing.Point(12, 341);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(321, 327);
+            this.test.TabIndex = 21;
+            this.test.Text = "";
+            // 
+            // fill
+            // 
+            this.fill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.fill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fill.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.fill.Location = new System.Drawing.Point(199, 311);
+            this.fill.Name = "fill";
+            this.fill.Size = new System.Drawing.Size(73, 24);
+            this.fill.TabIndex = 22;
+            this.fill.Text = "Fill";
+            this.fill.UseVisualStyleBackColor = false;
+            this.fill.Click += new System.EventHandler(this.fill_Click);
             // 
             // CTA
             // 
@@ -1031,7 +1055,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CTA.Properties.Resources.bgimg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(681, 681);
+            this.ClientSize = new System.Drawing.Size(1484, 681);
+            this.Controls.Add(this.fill);
+            this.Controls.Add(this.test);
             this.Controls.Add(this.qrbox);
             this.Controls.Add(this.qrbtn);
             this.Controls.Add(this.capture);
@@ -1121,6 +1147,8 @@
         private System.Windows.Forms.Timer t1;
         private System.Windows.Forms.Button qrbtn;
         private System.Windows.Forms.PictureBox qrbox;
+        private System.Windows.Forms.RichTextBox test;
+        private System.Windows.Forms.Button fill;
     }
 }
 
